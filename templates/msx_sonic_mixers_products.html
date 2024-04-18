@@ -1,0 +1,49 @@
+{% extends "./layout/default.html" %}
+{% set page = "msx" %}
+{% set css = 'msx-sonic-mixer-products' %}
+{% set menu = "msx-sonic-mixers-products" %}
+
+{% block main_header %}
+  <h1>Macrosonix - Mixer Products</h1>
+{% endblock %}
+
+{% block content %}
+<div class='msx row'>
+  {% include "blocks/_msx_menu.html" %}
+  <div class='block col-12 col-xl-10'>
+    <div class='block-inner'>
+      <div class='clearfix'>
+        <div class='block-title'>Sonic Mixer Products</div>
+        <div class='block-image'>
+          <img src="/static/img/sm2-20-200.jpg">
+        </div>
+        <div class='block-body'>
+          <ul>
+            <li>Laboratory 2 liter model with clear acrylic chamber.</li>
+            <li>Laboratory 20 liter model with stainless mixing chamber.</li>
+            <li>Production 200 liter size.</li>
+            <li>Engineered and manufactured by MacroSonix.</li>
+          </ul>
+        </div>
+      </div>
+      <div class='clearfix'>
+        <div class='block-title'>Sonic Mixer Design</div>
+        <div class='block-image'>
+          <img class='img-sonic-mixer-schematic' src="/static/img/sm_schematic1.jpg" />
+        </div>
+        <div class='block-body'>
+          <ul>
+            <li>Patented acoustic fluidization and linear motor/control technology.</li>
+            <li>Acoustic fluidization creates a bubbling, high intensity mixing zone.</li>
+            <li>Chamber shape focuses energy and produces circulation (stirring).</li>
+            <li>Bearing and oil free linear variable resluctance linear motor.
+            <li>Microcontroller controlled.</li>
+            <li>Easy user input and precise blending control.</li>
+            <li>The result is fast, efficient and thorough mixing.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

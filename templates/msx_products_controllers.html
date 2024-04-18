@@ -1,0 +1,49 @@
+{% extends "./layout/default.html" %}
+{% set page = "msx" %}
+{% set menu = "msx-products-controllers" %}
+
+{% block main_header %}
+  <h1>Macrosonix - Controllers</h1>
+{% endblock %}
+
+{% block content %}
+<div class='msx row'>
+  {% include "blocks/_msx_menu.html" %}
+  <div class='block col-12 col-xl-10'>
+    <div class='block-inner'>
+      <div class='clearfix'>
+        <div class='block-title'>User Interface Controller</div>
+        <div class='block-image'>
+          <img src="/static/img/lmc_user_interface.jpg" alt="User Interface" />
+        </div>
+        <div class='block-body'>
+          <ul>
+            <li>MSX user interface and logic controllers</li>
+            <li>Motorola HC08 microcontrollers, pushbutton encoder input, and LCD display.</li>
+            <li>Modular firmware provides a flexible and easily modifiable menu driven interface.</li>
+            <li>Multiple digital and analog input/output channels.</li>
+            <li>Available including optional feedback transducers.</li>
+            <li>Modular firmware with customized menus and control modes</li>
+            <li>Multi-channel motor and heater control PWM output.</li>
+          </ul>
+        </div>
+      </div>
+      <div class='clearfix'>
+        <div class='block-title'>Motor Controller</div>
+        <div class='block-image'>
+          <img src="/static/img/lmc_pcb.jpg" alt="PCB" />
+        </div>
+        <div class='block-body'>
+          <ul>
+            <li>MSX linear motor controller is a solid state IGBT design.</li>
+            <li>Driven by a separate digitial user interface.</li>
+            <li>Available in 115 or 230 VAC.</li>
+            <li>Optional feedback transducers.</li>
+            <li>Modular firmware with customized menus.</li>
+            <li>High efficiency, variable capacity PWM output.</li>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

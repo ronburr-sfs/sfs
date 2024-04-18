@@ -1,0 +1,63 @@
+{% extends "./layout/default.html" %}
+{% set page = "msx" %}
+{% set menu = "msx-sonic-mixers-performance" %}
+
+{% block main_header %}
+  <h1>Macrosonix - Performance</h1>
+{% endblock %}
+
+{% block content %}
+<div class='msx row'>
+  {% include "blocks/_msx_menu.html" %}
+  <div class='block col-12 col-xl-10'>
+    <div class='block-inner'>
+      <div class='clearfix'>
+        <div class='block-title'>Sonic Mixing Technology</div>
+        <div class='block-image'>
+          <img class='img-sonic-mixer-technology' src="/static/img/sm_rnd_flr.jpg" />
+        </div>
+        <div class='block-body'>
+          <ul>
+            <li>Patented acoustic fluidization and linear motor/control technology.</li>
+            <li>Acoustic fluidization creates a bubbling, high intensity mixing zone.</li>
+            <li>Chamber shape focuses energy and produces circulation (stirring).</li>
+            <li>The result is fast, efficient and thorough mixing.</li>
+            <li>Sonic power is provided by a variable reluctance linear motor.</li>
+            <li>A schematic is on the next page.</li>
+          </ul>
+        </div>
+      </div>
+      <div class='clearfix'>
+        <div class='block-title'>Sonic Mixers - Precision Mixing Control</div>
+        <div class='block-image'>
+          <img src="/static/img/lmc_user_interface-300x225.jpg" alt="" title="lmc_user_interface" />
+        </div>
+        <div class='block-body'>
+          <ul>
+          <li>Microcontroller based and menu driven.</li>
+          <li>Blend intensity selection with customizable mix recipes.</li>
+          <li>Linear power control.</li>
+          <li>Automatic blend timer.</li>
+          <li>Bladeless chamber and no blade shear heating.</li>
+          <li>Gently mix without damaging product.</li>
+          </ul>
+        </div>
+      </div>
+      <div class='clearfix'>
+        <div class='block-title'>Sonic Mixers - Mixing Effectiveness</div>
+        <div class='block-image'>
+          <img src="/static/img/sm_graph_rsd.jpg" />
+        </div>
+        <div class='block-body'>
+          <ul>
+            <li>Wide range of powder mix sizes (5-750 um) and densities.</li>
+            <li>Excellent mixing (&lt;2% RSD) with spike levels down to 0.1%.</li>
+            <li>Typical mix times 2:00 minutes or less.</li>
+            <li>Chamber fill level can range from below 5% to over 75%.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

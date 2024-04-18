@@ -1,0 +1,42 @@
+{% extends "./layout/default.html" %}
+{% set page = "msx" %}
+{% set css = "msx-products-linear-motors" %}
+{% set menu = "msx-products-linear-motors" %}
+
+{% block main_header %}
+  <h1>Macrosonix - Linear Motors</h1>
+{% endblock %}
+
+{% block content %}
+<div class='msx row'>
+  {% include "blocks/_msx_menu.html" %}
+  <div class='block col-12 col-xl-10'>
+    <div class='block-inner'>
+      <div class='block-title'>Linear Motors</div>
+      <div class='block-image'>
+				<img src="/static/img/lmc_motor.jpg" alt="Linear Motor Case" />
+				<img src="/static/img/lmc_motor_cross1.jpg" alt="Linear Motor Cross" style="width: 225px; border: 5px solid navy;margin: 10px" />
+      </div>
+      <div class='block-body'>
+        <ul>
+          <li>Variable reluctance linear motors.</li>
+  				<li>Variable force, stroke and frequency.
+            <ul>
+              <li>High frequency (up to 1 kHz).
+              <li>High force (up to 1,000 lbf).
+              <li>Displacements in excess of +/- 5mm.</li>
+            </ul>
+          </li>
+				  <li>Simple robust design.
+            <ul>
+              <li>No sliding seals.</li>
+              <li>No bearings.</li>
+              <li>No lubrication for completely oilless operation.</li>
+            </ul>
+          </li>
+          <li>High durability with low maintenance and low cost.</li>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

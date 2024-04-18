@@ -1,0 +1,51 @@
+{% extends "./layout/default.html" %}
+{% set page = "msx" %}
+{% set css = "msx-sonic-mixers" %}
+{% set menu = "msx-sonic-mixers" %}
+
+{% block main_header %}
+  <h1>Macrosonix - Sonic Mixers</h1>
+{% endblock %}
+
+{% block content %}
+
+<div class='msx row'>
+  {% include "/blocks/_msx_menu.html" %}
+  <div class='block col-12 col-xl-10'>
+    <div class='block-inner'>
+      <div class='clearfix'>
+        <div class='block-title'><a href="./msx-sonic-mixers-products">Products - 2, 20 & 200 Liters</a></a></div>
+        <div class='block-image'>
+          <img src="/static/img/sm_2_market_smaller.jpg" alt="SM2L" />
+          <img src="/static/img/sm20l.jpg" alt="SM20L" />
+          <img height="250" src="/static/img/sm200l.jpg" alt="SM200L" />
+        </div>
+        <div class='block-body'>
+          <a class='btn btn-primary' href='./msx-sonic-mixers-products'>Learn More</a>
+        </div>
+      </div>
+      <div class='clearfix'>
+        <div class='block-title'><a href="./msx-sonic-mixers-performance" class="clText">Performance - Control & Effectiveness</a></div>
+        <div class='block-image'>
+          <img dynsrc="/static/img/2dmix.mpg" src="/static/img/sm_rnd_flr.jpg" start="fileopen" loop="infinite" border="0" />
+          <img src="/static/img/lmc_user_interface.jpg" />
+          <img src="/static/img/sm_graph_rsd.jpg" class='msx-add-border' />
+        </div>
+        <div class='block-body'>
+          <a class='btn btn-primary' href='./msx-sonic-mixers-performance'>Learn More</a>
+        </div>
+      </div>
+      <div class='clearfix'>
+        <div class='block-title'><a href="quality"><a href="/msx/sonic-mixers-benefits">Benefits - Bladeless, Ease of Use & Reliability</a></a></div>
+        <div class='block-image'>
+          <img src="/static/img/sm_chamber_install.jpg" />
+          <img src="/static/img/sm_2_manuf.jpg" alt="Quality &amp; Reliablity" />
+        </div>
+        <div class='block-body'>
+          <a class='btn btn-primary' href='./msx-sonic-mixers-benefits'>Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

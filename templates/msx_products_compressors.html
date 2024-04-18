@@ -1,0 +1,57 @@
+{% extends "./layout/default.html" %}
+{% set page = "msx" %}
+{% set menu = "msx-products-compressors" %}
+
+{% block main_header %}
+  <h1>Macrosonix - Compressors</h1>
+{% endblock %}
+
+{% block content %}
+<div class='msx row'>
+  {% include "blocks/_msx_menu.html" %}
+  <div class='block col-12 col-lg-10'>
+    <div class='block-inner'>
+      <div class='clearfix'>
+        <div class='block-title'>Refrigeration</div>
+        <div class='block-image'>
+  				<img src="/static/img/othr_refrig.jpg" width="200" />
+        </div>
+        <div class='block-body'>
+          <ul>
+    				<li>Self-containted refrigeration units.</li>
+            <li>Feature a variable reluctance linear&nbsp; motor, high frequency, short stroke operation (350 Hz).</li>
+            <li>Rugged all-metal pump assembly.</li>
+            <li>Oil-less operation with high durability and reliability.</li>
+            <li>There are no rotating slides, seals or lubricated parts.</li>
+            <li>Compatible with a wide range of refrigerants and offer flexible orientation.</li>
+            <li>The microprocessor controller has an optional LCD with interface menu.&nbsp; </li>
+            <li>Customized menu items can be added.&nbsp; </li>
+          </ul>
+        </div>
+      </div>
+      <div class='clearfix'>
+        <div class='block-title'>Air &amp; Gas Compressors</div>
+        <div class='block-image'>
+  				<img src="/static/img/othr_comp_module.jpg" />
+  				<img src="/static/img/othr_comp_system.jpg" />
+  				<img src="/static/img/othr_comp_tower.jpg" style="width: 50%" />
+        </div>
+        <div class='block-body'>
+  				<ul>
+            <li>MacroSonix offers linear resonance compressors modules.</li>
+            <li>Integrated modular systems for larger pressure and flow rates.</li>
+            <li>Modularity provides system flexibility.</li>
+            <li>Units configured in series achieve higher pressures</li>
+            <li>Units configured in parallel achieve higher flow rates.</li>
+            <li>High frequency metal diaphragm pumps (100-500Hz)&nbsp; controlled by a microprocessor.</li>
+            <li>Oil-less all metal pump and simple linear motor provide high reliability and durability.</li>
+            <li>The compressors offer a wide range of compatibility.</li>
+            <li>Highly reliable, contains no rotating parts, sliding seals or lubrication.</li>
+            <li>Field serviceable.</li>
+            <li>Flexible interconnection options.</li>
+          </ul>
+        </div>
+      </div>
+  </div>
+</div>
+{% endblock %}

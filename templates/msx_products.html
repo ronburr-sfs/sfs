@@ -1,0 +1,59 @@
+{% extends "./layout/default.html" %}
+{% set page = "msx" %}
+{% set css = "msx-products" %}
+{% set menu = "msx-products" %}
+
+{% block main_header %}
+  <h1>Macrosonix</h1>
+{% endblock %}
+
+{% block content %}
+<div class='msx row'>
+  {% include "blocks/_msx_menu.html" %}
+  <div class='block col-12 col-xl-10'>
+    <div class='block-inner'>
+      <div class='clearfix'>
+        <div class='block-title'><a href='/msx/sonic-mixers-benefits'>Sonic Powder Mixers and Processors</a></div>
+        <div class='block-image'>
+  				<img src="/static/img/sm_2_w_case.jpg" border="5" alt="SM2L with Case" />
+  				<img src="/static/img/sm_2_market_smaller.jpg" border="5" alt="SM2L" />
+  				<img src="/static/img/sm_20_w_cart.jpg" width="130" border="5" alt="SM20L with Cart" />
+        </div>
+        <div class='block-body'><a class='btn btn-primary' href='/msx-sonic-mixers-benefits'>Learn More</a></div>
+      </div>
+  		<div class='clearfix'>
+  			<div class='block-title'><a href='/msx-products-compressors'>Compressors and Custom Products</a></div>
+  			<div class='block-image'>
+  				<img src="/static/img/othr_comp_module.jpg" border="0" alt="Compressors" width="225" />
+  				<img src="/static/img/othr_refrig.jpg" border="0" alt="Refrig" width="225"  />
+  			</div>
+  			<div class='block-body'><a class='btn btn-primary' href='/msx-products-compressors'>Learn More</a></div>
+  		</div>
+      <div class='clearfix'>
+    		<div class='block-title'>
+				<a href='/msx-products-linear-motors'>	
+				<a href='/msx-products-resonators'>Fluidic Resonators</a>
+				<a href='/msx-mixers-linear-motors'>Linear Motors</a>
+			</div>
+        	<div class='block-image'>
+  				<img src="/static/img/othr_rms.jpg" border="0" alt="RMS Resonator"  />
+    			<img src="/static/img/lmc_motor.jpg" border="0" alt="VRM Linear Motor" />
+    		</div>
+    		<div class='block-body'>
+          <a class='btn btn-primary' href='/msx-products-resonators'>Learn More - Fluidics</a>
+          <a class='btn btn-primary' href='/msx-products-linear-motors'>Learn More - Motors</a>
+        </div>
+      </div>
+    	<div class='clearfix'>
+    		<div class='block-title'><a href='/msx-products-controllers'>Electronic Controls</a></div>
+    		<div class='block-image'>
+          <img src="/static/img/lmc_user_interface.jpg" />
+    			<img src="/static/img/lmc_controller.jpg" border="0" alt="Controller Assy" />
+    			<img src="/static/img/lmc_pcb.jpg" border="5" alt="Controller PCB" style='border-style:solid;border-width:4px;border-color:#339;' />
+    		</div>
+    		<div class='block-body'><a class='btn btn-primary' href='/msx-products-controllers'>Learn More</a></div>
+      </div>
+    </div>
+	</div>
+</div>
+{% endblock %}

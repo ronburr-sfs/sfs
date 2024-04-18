@@ -1,0 +1,30 @@
+{% extends "./layout/default.html" %}
+{% set page = "msx" %}
+{% set menu = "msx-products-resonators" %}
+
+{% block main_header %}
+  <h1>Macrosonix - Resonators</h1>
+{% endblock %}
+
+{% block content %}
+<div class='msx row'>
+  {% include "blocks/_msx_menu.html" %}
+  <div class='block col-12 col-xl-10'>
+    <div class='block-inner'>
+      <div class='block-title'>Resonant Macrosonic Synthesis (RMS) High Power Acoustics</div>
+      <div class='block-image'>
+        <img src="/static/img/othr_rms.jpg" width="350" />
+      </div>
+      <div class='block-body'>
+        <ul>
+          <li>MSX acoustic resonators are capable of high acoustic amplitudes.</li>
+          <li>Ambient pressures up to 200 psi.</li>
+          <li>High peak pressures reach 500 psi.</li>
+          <li>Sizes available to meet pressure amplification needs.</li>
+          <li>Diaphragm or entire resonator linear motor drives.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

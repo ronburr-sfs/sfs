@@ -1,0 +1,53 @@
+{% extends "./layout/default.html" %}
+{% set page = "msx" %}
+{% set menu = "msx-home" %}
+
+{% block main_header %}
+  <h1>Macrosonix</h1>
+{% endblock %}
+
+{% block content %}
+<div class='msx row'>
+  {% include "blocks/_msx_menu.html" %}
+  <div class='block col-12 col-xl-10'>
+    <div class='block-inner'>
+      <div class='block-title'>Sonic Powder Mixers &#8230; Mixing with Sound</div>
+      <div class='block-image'>
+        <img src="/static/img/sm_2_w_case.jpg" alt="Sonic Mixer" height="200" />
+      </div>
+      <div class='block-body'>
+        <ul>
+          <li><a href="./msx-sonic-mixers">Sonic Mixers Summary</a></li>
+          <li><a href="./msx-sonic-mixers-video">Short 3-minute Video</a></li>
+        </ul>
+        <ul>
+          <li><a href="./msx-sonic-mixers-products">Product Line</a></li>
+          <li><a href="./msx-sonic-mixers-performance">Control & Performance</a></li>
+          <li><a href="./msx-sonic-mixers-benefits">Ease of Use & Maintenance-Reliability Benefits</a></li>
+        </ul>
+        <ul>
+          <li><a target="_blank" href="/static/doc/sm_salessheet.pdf">Brochure</a></li>
+          <li><a target="_blank" href="/static/doc/sm_datasheet.pdf">Datasheet</a></li>
+        </ul>
+        <ul>
+          <li>Exclusively licensed to Design Integrated Technogy, Inc.</li>
+          <li>Contact DIT for sales, manufacturing and service @ <a target="_blank" href="http://www.ditusa.com/sonic_mixers.php">ditusa.com</a></li>
+        </ul>
+      </div>
+      <div class='block-title'>Acoustic &amp; Fluidic Devices, Linear Motors &amp; Embedded Control</div>
+      <div class='block-image'>
+        <img src="/static/img/linear_compressor.jpg" alt="" height="200" />
+      </div>
+      <div class='block-body'>
+        <ul>
+          <li><a href="./msx-products">Products Summary</a></li>
+          <li><a href="./msx-products-linear-motors">Linear Motors &amp; Controllers</a></li>
+          <li><a href="./msx-products">Acoustic-Fluidic Products &amp; Applications</a></li>
+          <li><a href="./msx-services">Customized Design</a></li>
+          <li>Technology Licensing</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

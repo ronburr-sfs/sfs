@@ -1,0 +1,38 @@
+{% extends "./layout/default.html" %}
+{% set page = "msx" %}
+{% set css = 'msx-services' %}
+{% set menu = "msx-services" %}
+
+{% block main_header %}
+  <h1>Macrosonix</h1>
+{% endblock %}
+
+{% block content %}
+<div class='msx row'>
+  {% include "blocks/_msx_menu.html" %}
+  <div class='block col-12 col-xl-10'>
+    <div class='block-inner'>
+      <div class='block-title'>Macrosonic Services</div>
+      <div class='block-image'>
+				<img src="/static/img/sv_cad_carol-150x150.jpg" alt="sv_cad_carol" title="sv_cad_carol" />
+				<img src="/static/img/sv_ee_jim-150x150.jpg" alt="sv_ee_jim" title="sv_ee_jim" />
+				<img src="/static/img/sv_microscope_wade-150x150.jpg" alt="sv_microscope_wade" title="sv_microscope_wade" />
+				<img src="/static/img/sv_mill_kevin-150x150.jpg" alt="sv_mill_kevin" title="sv_mill_kevin" />
+      </div>
+      <div class='block-body'>
+        <ul>
+          <li>Custom engineering and development consulting.
+          <li>Develop products using our fluidics, linear motor, and controller expertise.
+          <li>System dynamics modeling using VisSim for electomagnetics (motor), controls and fluidics.</li>
+          <li>SolidWorks 3D solid product design modeling and manufacturing drawings/data.
+          <li>COSMOS FEA stress analysis.</li>
+          <li>Protel DXP electronic schematic capture, simulation and PCB design.</li>
+          <li>CodeWarrior C programming for embedded Motorola microcontrollers.</li>
+          <li>CNC automated prototype manufacturing and testing.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,43 @@
+{% extends "./layout/default.html" %}
+{% set page = "msx" %}
+{% set menu = "msx-sonic-mixers-benefits" %}
+
+{% block main_header %}
+  <h1>Macrosonix - Benefits</h1>
+{% endblock %}
+
+{% block content %}
+<div class='msx row'>
+  {% include "blocks/_msx_menu.html" %}
+  <div class='block col-12 col-xl-10'>
+    <div class='block-inner'>
+      <div class='block-title'>Sonic Mixers - Ease of Use Benefits</div>
+      <div class='block-image'>
+				<img src="/static/img/sm_chamber_install-300x225.jpg" alt="Benefits" title="Benefits" width="300">
+      </div>
+      <div class='block-body'>
+				<ul>
+				<li>Secure chamber keeps powders in and contaminants out</li>
+				<li>Removable chambers provide easy storage, filling and emptying</li>
+				<li>Spare chambers may be used for storage to minimize transfer steps.</li>
+				<li>Captured gasket is easily replaced, but not easily lost.</li>
+				<li>Easy to clean bladeless chamber saves time and money</li>
+				<li>Estimated payback period from labor savings only 1-year.</li>
+				</ul>
+      </div>
+      <div class='block-title'>Sonic Mixers - Quality and Reliability</div>
+      <div class='block-image'><img src="/static/img/sm_2_manuf.jpg" width="320" /></div>
+      <div class='block-body'>
+        <ul>
+          <li>Non-contact, long life, bearing-free linear motor design.</li>
+          <li>No rotary bearings or seals to contaminate or wear-out.</li>
+          <li>Quality CNC manufacturing for consistency.</li>
+          <li>On-going reliability improvement program.</li>
+          <li>Continuous automated in-house testing.</li>
+          <li>Three-year standard and five-year extended warranty.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
