@@ -1,0 +1,45 @@
+{% extends "./layout/default.html" %}
+{% set page = "applications" %}
+{% set menu = 'applications' %}
+
+{% block main_banner %}
+  <img src="/static/img/web-development.png" />
+  <img src="/static/img/cloud.png" />
+  <img src="/static/img/exploration.png" />
+  <img src="/static/img/data.png" />
+  <img src="/static/img/exploratory-analysis.png" />
+  <img src="/static/img/library.png" />
+  <img src="/static/img/python.png" />
+{% endblock %}
+
+{% block main_header %}
+  <h1>Cloud Applications & Data Science</h1>
+{% endblock %}
+
+{% block content %}
+  <div id='applications_summary' class='blocks row'>
+    {% include './blocks/applications/_block_summary.html' %}
+  </div>
+
+  <div id='custom-tools-summary' class='blocks row'>
+    {% include './blocks/applications/_custom_tools_summary.html' %}
+  </div>
+
+  <div id='custom-tools' class='blocks row'>
+    {% include './blocks/applications/_custom_tools.html' %}
+  </div>
+
+  <div id='apps-summary' class='blocks row'>
+    {% include './blocks/applications/_apps_summary.html' %}
+  </div>
+
+  <div id='apps' class='blocks row'>
+    {% include './blocks/applications/_apps.html' %}
+  </div>
+
+  <div id='dev-tools' class='blocks row'>
+    {% include './blocks/applications/_block_development.html' %}
+    {% include './blocks/applications/_block_tools.html' %}
+  </div>
+
+{% endblock %}

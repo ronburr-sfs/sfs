@@ -1,0 +1,10 @@
+{% extends "./layout/personal.html" %}
+{% set page = "personal" %}
+{% set css = "personal" %}
+{% set menu = 'personal' %}
+
+{% block content %}
+    {% include './ron/_awards_banner_personal.html' %}
+    {% include './ron/_patents.html' %}
+    {% include './ron/_publications.html' %}
+{% endblock %}

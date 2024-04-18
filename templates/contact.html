@@ -1,0 +1,13 @@
+{% extends "./layout/default.html" %}
+{% set page = "contact" %}
+{% set css = 'contact' %}
+{% set menu = 'contact' %}
+
+{% block main_header %}
+{% endblock %}
+
+{% block content %}
+  <div id='contact-form' class='blocks row'>
+    {% include "./blocks/_contact_form.html" %}
+  </div>
+{% endblock %}

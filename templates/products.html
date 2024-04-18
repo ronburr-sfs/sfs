@@ -1,0 +1,25 @@
+{% extends "./layout/default.html" %}
+{% set page = "products" %}
+{% set menu = 'products' %}
+
+{% block main_banner %}
+  <img src="/static/img/medical.png" />
+  <img src="/static/img/medical-prescription.png" />
+  <img src="/static/img/medical-record.png" />
+{% endblock %}
+
+{% block main_header %}
+  <h1>Products & Embedded Software</h1>
+{% endblock %}
+
+{% block content %}
+
+<div id="embedded" class='blocks row'>
+  {% include './blocks/products/_embedded.html' %}
+</div>
+
+<div id="devices" class='blocks row'>
+    {% include './blocks/products/_devices.html' %}
+</div>
+
+{% endblock %}

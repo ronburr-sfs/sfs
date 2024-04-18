@@ -1,0 +1,119 @@
+#personal #header {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  overflow: hidden;
+}
+#personal #header #header-inner #header-nav .social {
+  width: 3em;
+}
+#personal #main {
+  margin: 5em 0 0;
+  scroll-margin-top: 5em;
+}
+#personal #main #main-banner {
+  display: none;
+}
+#personal #main #main-inner #main-header {
+  display: none;
+  margin: 0;
+}
+#personal #main #main-inner #content .blocks .block {
+  background: transparent;
+}
+#personal #main #main-inner #content .blocks .block .block-inner .block-title {
+  background: transparent;
+}
+#personal #main #main-inner #content .blocks .block .block-inner .block-image {
+  margin: 0;
+  padding: 1em;
+  text-align: center;
+}
+#personal #main #main-inner #content .blocks .block .block-inner .block-image img {
+  max-width: 70%;
+  margin-top: 3em;
+  border-style: double;
+}
+#personal #main #main-inner #content .blocks .block .block-inner .block-body {
+  padding-top: 0;
+  background: transparent;
+}
+#personal #main #main-inner #content .blocks .block .block-inner .block-body .block-title {
+  font-size: 1.5em;
+  background: transparent;
+}
+#personal #main #main-inner #content .blocks .block .block-inner .block-body .block-heading {
+  margin: 0.5em 0 0;
+  font-weight: bold;
+  font-size: 1em;
+}
+#personal #main #main-inner #content .blocks .block .block-inner .block-body .block-tagline {
+  margin-top: 0em;
+}
+
+#personal #main #main-inner #content #personal-summary {
+  background: white;
+}
+#personal #main #main-inner #content #personal-interests {
+  background: #d8effc;
+}
+#personal #main #main-inner #content #personal-skills-technical {
+  background: #ddd;
+}
+#personal #main #main-inner #content #personal-skills-core {
+  background: white;
+}
+#personal #main #main-inner #content #personal-experience {
+  background: #d8effc;
+}
+#personal #main #main-inner #content #personal-experience-other {
+  background: #ddd;
+}
+#personal #main #main-inner #content #personal-awards {
+  background: white;
+}
+#personal #main #main-inner #content #personal-education {
+  background: #d8effc;
+}
+#personal #main #main-inner #content #personal-training {
+  background: #ddd;
+}
+#personal #main #main-inner #content #personal-hobbies {
+  background: #d8effc;
+}
+
+#personal #main #main-inner #content #personal-awards-banner .block .block-inner {
+  background: #ccc;
+}
+#personal #main #main-inner #content #personal-awards-banner .block .block-inner .block-icons {
+  text-align: center;
+  margin: 0 0 0.75em;
+}
+#personal #main #main-inner #content #personal-awards-banner .block .block-inner .block-icons img {
+  max-width: 90%;
+  height: 50px;
+  margin: 0;
+  border: none;
+}
+#personal #main #main-inner #content #personal-awards-banner .block .block-inner .block-icons img:first-child {
+  margin-top: 0.5em;
+  margin-right: 2.5em;
+}
+#personal #main #main-inner #content #personal-awards-banner .block .block-inner .block-title {
+  background: transparent;
+}
+
+#personal #main #main-inner #content #personal-awards .block .block-inner .block-image img {
+  width: 30%;
+}
+
+#personal #main #main-inner #content #personal-skills-core .block .block-inner .block-highlight, #main #main-inner #content #personal-skills-technical .block .block-inner .block-highlight {
+  font-weight: bold;
+}
+
+#personal #main #main-inner #content #personal-education .block .block-inner .block-image img {
+  width: 30%;
+  border-style: none;
+}
+
+/*# sourceMappingURL=personal.css.map */

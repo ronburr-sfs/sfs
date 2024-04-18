@@ -1,0 +1,37 @@
+{% extends "./layout/default.html" %}
+{% set page = "processes" %}
+{% set menu = 'processes' %}
+
+{% block main_banner %}
+  <img src="/static/img/003-requirement.png" title="Requirements" />
+  <img src="/static/img/002-concept.png" title="Concept" />
+  <img src="/static/img/004-sketch.png" title="Design"  />
+  <img src="/static/img/005-optimization.png" title="Optimize" />
+  <img src="/static/img/006-document.png" alt="" title="Test" />
+{% endblock %}
+
+{% block main_header %}
+  <h1>Certified Agile - Product Development & Quality</h1>
+{% endblock %}
+
+{% block content %}
+<div id='process' class='blocks row'>
+  {% include './blocks/processes/_block_process.html' %}
+</div>
+
+<div id='agile' class='blocks row'>
+  {% include './blocks/processes/_agile.html' %}
+</div>
+
+<div id='process-steps' class='blocks row'>
+  {% include "./blocks/processes/_block_reqs.html" %}
+  {% include "./blocks/processes/_block_concept.html" %}
+  {% include "./blocks/processes/_block_design.html" %}
+  {% include "./blocks/processes/_block_development.html" %}
+  {% include "./blocks/processes/_block_optimization.html" %}
+  {% include "./blocks/processes/_block_vnv.html" %}
+  {% include "./blocks/processes/_block_support.html" %}
+  {% include "./blocks/processes/_block_quality.html" %}
+  {% include "./blocks/processes/_block_project.html" %}
+</div>
+{% endblock %}

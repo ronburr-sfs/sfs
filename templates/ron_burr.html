@@ -1,0 +1,17 @@
+{% extends "./layout/personal.html" %}
+{% set page = "personal" %}
+{% set css = "personal" %}
+{% set menu = 'personal' %}
+
+{% block content %}
+    {% include './ron/_awards_banner_personal.html' %}
+    {% include './ron/_summary.html' %}
+    {% include './ron/_interests.html' %}
+    {% include './ron/_skills.html' %}
+    {% include './ron/_experience.html' %}
+    {% include './ron/_experience_other.html' %}
+    {% include './ron/_awards.html' %}
+    {% include './ron/_education.html' %}
+    {% include './ron/_training.html' %}
+    {% include './ron/_hobbies.html' %}
+{% endblock %}

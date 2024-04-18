@@ -1,0 +1,28 @@
+{% extends "./layout/default.html" %}
+{% set page = "about" %}
+{% set css = "about" %}
+{% set menu = 'about' %}
+
+{% block main_header %}
+  <h1>About Us</h1>
+{% endblock %}
+
+{% block content %}
+
+<div id='purpose' class='blocks row'>
+  {% include "blocks/about/_purpose.html" %}
+</div>
+
+<div id='background-values' class='blocks row'>
+  {% include "./blocks/about/_background_values.html" %}
+</div>
+
+<div id='principals' class='blocks row'>
+  {% include "blocks/_principals.html" %}
+</div>
+
+<div id='contact-form' class='blocks row'>
+  {% include "./blocks/_contact_form.html" %}
+</div>
+
+{% endblock %}
