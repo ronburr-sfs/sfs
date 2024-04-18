@@ -1,0 +1,28 @@
+#main #content #principals {
+    padding: 1.5em;
+    background: #ddd;
+    .block {
+        margin: 1.5em 0;
+        .block-inner {
+            margin: 0 1em;
+            padding: 0 1em;
+            .block-image {
+                text-align: center;
+                img {
+                    margin-bottom: -50px;
+                    height: 150px;
+                    border-radius: 75px;
+                }
+            }
+            .block-title {
+                padding-top: 4em;
+            }
+        }
+    }
+    #principals-title {
+        margin: 0;
+        font-size: 2em;
+        font-weight: bold;
+        text-align: center;
+    }
+}

@@ -1,0 +1,25 @@
+#main #content #background-values {
+    padding: 1em;
+    background: $colorBlueVeryLight;
+    .blocks-title {
+        text-align: center;
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+    .block {
+        padding: 1em;
+        .block-inner {
+            border-style: solid;
+            border-width: thin;
+            border-color: black;
+            border-radius: 1em;
+            background: white;
+            .block-title {
+                background: transparent;
+            }
+            .block-body {
+                background: transparent;
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+#capabilities {
+    margin: 0;
+    background: $colorBlueVeryLight;
+    .block {
+        background: transparent;
+        .block-title {
+            margin: 0.5em 0 0;
+            background: transparent;
+        }
+        .block-image {
+            margin-top: 2em;
+            background: transparent;
+            img {
+                width: 100%;
+            }
+        }
+        .block-body {
+            padding: 0 2em 1em;
+            background: transparent;
+            .cap {
+                margin: 1em 0;
+                padding: 0;
+                display: flex;
+                .cap-icon {
+                    float: left;
+                    width: 20%;
+                    vertical-align: top;
+                    img {
+                        width: 80%;
+                        margin-top: 1em;
+                    }
+                }
+                .cap-body {
+                    margin-left: 1em;
+                    float: right;
+                    width: 75%;
+                    .cap-title {
+                        font-size: 1.25em;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+        .block-button {
+            background: transparent;            
+        }
+    }
+}

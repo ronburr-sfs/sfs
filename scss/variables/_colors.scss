@@ -1,0 +1,43 @@
+$color-blue: blue;
+$colorBlue: #229ADD ;
+$colorBlueLight: #3ae;
+$colorBlueVeryLight: lighten($colorBlueLight, 35%);
+
+$color-green: green;
+$colorGreen: #55CC56;
+$colorGreenLight: #58CA58;
+
+$color-red: red;
+$color-orange: orange;
+
+$color-grey-light: #ddd;
+$color-grey-medium-light: #ccc;
+$color-grey-medium: #aaa;
+$color-grey-medium-dark: #666;
+$color-grey-dark: #333;
+
+$color-primary: #29d;
+$color-secondary: #5c5;
+
+$color-background: white;
+$color-color: black;
+
+$color-background-header: black;
+$color-header: white;
+
+$color-background-footer: black;
+$color-footer: #aaa;
+
+$color-background-main: white;
+$color-main: black;
+
+$color-background-block: white;
+$color-block: black;
+
+$color-background-block-title: white;
+$color-block-title: black;
+
+$color-background-block-text: white;
+$color-block-text: black;
+
+$color-button-primary: $color-secondary;

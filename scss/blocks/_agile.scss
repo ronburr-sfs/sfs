@@ -1,0 +1,15 @@
+#main #content #agile {
+    background: lightgrey;
+    padding: 1.5em;
+    .block-title {
+        background: transparent;
+    }
+    .block-image {
+        padding: 1em;
+        text-align: center;
+        img {
+            height: 10em;
+            margin: 0 1em;
+        }
+    }
+}

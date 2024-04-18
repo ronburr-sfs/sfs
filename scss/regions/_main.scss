@@ -1,0 +1,33 @@
+#main {
+  background: $color-background-main;
+  color: $color-main;
+  margin: 0;
+  padding: 0;
+  #main-banner {
+    max-height: 400px;
+    overflow: hidden;
+    img {
+      width: 100%;
+    }
+  }
+  #main-inner {
+    padding: 0;
+    #main-header {
+      margin: 1em 0;
+      text-align: center;
+      h1 {
+        font-size: 2em;
+        font-weight: bold;
+      }
+    }
+    .row {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1400px;
+  }
+}

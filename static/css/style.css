@@ -1,990 +1,1024 @@
+@charset "UTF-8";
 body {
-  font-family: "Roboto", sans-serif;
-  font-size: 1rem;
-}
-
-a {
-  color: #0000f1;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #2525ff;
-}
-
-.text-center {
-  text-align: center;
-}
-
-table, .table {
-  border-collapse: collapse;
-  margin: 0.5em auto;
-  background-color: white;
-}
-table tr th, table tr td, .table tr th, .table tr td {
-  border: 1px solid #aaa;
-  padding: 0.25rem 1rem;
-}
-table tr th, .table tr th {
-  text-align: center;
-  background: #eee;
-}
-table tr td.table-action a, .table tr td.table-action a {
-  display: inline-block;
-  background: darkblue;
-  color: white;
-  margin: 0.1rem 0.1rem;
-  padding: 0.1rem 1rem;
-  border-radius: 1rem;
-}
-table tr td.table-action a:hover, .table tr td.table-action a:hover {
-  text-decoration: none;
-  background: #0000d8;
-}
-table tr td:first-child, .table tr td:first-child {
-  text-align: left;
-}
-
-.btn {
-  padding: 0.25em 1em;
-  border-radius: 0.5rem;
-  background-color: #5cd231;
-  color: black;
-  font-weight: bold;
-  border: none;
-  outline: none !important;
-}
-
-.btn:hover {
-  color: white;
-}
-
-.btn:focus {
-  outline: none !important;
-}
-
-.block {
-  margin: 0 auto 1rem;
-  padding: 0 0.5rem;
-}
-.block .block-inner {
-  border: 1px solid #ccc;
-  border-radius: 0.5rem;
-}
-.block .block-inner .block-title {
-  padding: 0.25rem 1rem;
-  border-radius: 0.5rem 0.5rem 0 0;
-  text-align: center;
-  font-size: 1em;
-  font-weight: bold;
-  background: #0000a5;
-  color: white;
-}
-.block .block-inner .block-body {
-  padding: 1rem;
-  font-size: 0.9rem;
-}
-.block .block-inner .block-action {
-  margin: 0.5rem auto;
-  text-align: center;
-}
-.block .block-inner .block-action a {
-  display: inline-block;
-  padding: 0.25rem 1rem;
-  border-radius: 0.25rem;
-  font-size: 0.85rem;
-  font-weight: bold;
-  background: #9fe585;
-  color: white;
-}
-
-form table {
-  background-color: #eee;
-  border-radius: 0.5em;
-}
-form table th, form table td {
-  border: none;
-  background-color: transparent;
-}
-form table th {
-  text-align: right;
-}
-form table td input, form table td textarea {
-  background-color: white;
-}
-
-html, body {
-  margin: 0;
-  padding: 0;
-  font-size: 16px;
+  background: #ccc;
 }
 
 #header {
-  display: grid;
-  grid-template-columns: 1fr 10fr;
-  background: darkblue;
+  background: black;
   color: white;
-  font-weight: bold;
-  font-size: 1.5rem;
-  padding: 0.5em;
-}
-#header a {
-  color: white;
-}
-#header a:hover {
-  color: #8EE070;
-}
-#header #header-left {
-  text-align: left;
-}
-#header #header-right {
-  text-align: right;
-}
-#header #header-right a {
-  margin-left: 0.5em;
-}
-
-#nav {
-  background: #9fe585;
-  padding: 0.5em 1em;
-  text-align: center;
-}
-#nav a {
-  display: inline-block;
-  margin: 0 0.5em;
-  color: black;
-  font-size: 1.25rem;
-  font-weight: bold;
-}
-#nav a:hover {
-  color: #666;
-}
-
-#main {
-  padding: 0.5em 0;
-  background: #ccc;
-}
-#main .content-title, #main h1 {
+  padding: 0.5em 4em;
   margin: 0;
-  padding: 0.25em 1em;
-  text-align: center;
-  font-size: 2rem;
+}
+#header #header-brand {
+  padding: 0;
+}
+#header #header-brand #header-title {
+  display: inline-block;
+}
+#header #header-brand #header-title a {
+  display: inline-block;
+  font-size: 1.75em;
   font-weight: bold;
-  color: black;
-}
-#main .content-subtitle, #main h2 {
-  margin: 0.5em 0;
-  text-align: left;
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: black;
-}
-#main .content-body {
-  padding: 0 1em 0.75em;
-  text-align: center;
-}
-
-#superfooter {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  padding: 0 3em;
-  background: #0000a5;
-}
-#superfooter ul li {
-  list-style-type: none;
-}
-#superfooter a {
+  margin: 0.25em 0.25em 0.25em 1em;
+  padding: 0 0em;
   color: white;
+  border-bottom: 1px solid transparent;
 }
-#superfooter a:hover {
-  color: #5cd231;
+#header #header-brand #header-title a #header-title-left {
+  color: #55CC56;
+}
+#header #header-brand #header-title a #header-title-right {
+  color: #229ADD;
+}
+#header #header-brand #header-title a:hover {
+  border-bottom: 1px solid #5c5;
+  text-decoration: none;
+}
+#header #header-brand #header-title a.active {
+  text-decoration: none;
+}
+#header #header-nav {
+  text-align: right;
+  padding: 0;
+}
+#header #header-nav a {
+  display: inline-block;
+  font-size: 1.25em;
+  margin: 0.75em 0.5em;
+  padding: 0;
+  color: white;
+  border-bottom: 1px solid transparent;
+}
+#header #header-nav a:hover {
+  border-bottom: 1px solid #5c5;
+  text-decoration: none;
+}
+#header #header-nav a.active {
+  color: #229ADD;
+  text-decoration: none;
+}
+#header #header-nav .social {
+  margin: 0 0 0 1em;
+  padding: 0.125em 0 0 0;
+  width: 2em;
+  height: 2em;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 1em;
+  font-size: 0.75em;
+  background: #58CA58;
 }
 
 #footer {
+  margin: 0;
+  padding: 1em 0;
+  background: black;
+  color: #aaa;
   text-align: center;
-  padding: 0.5em 1em;
-  background: #0000a5;
-  font-size: 0.85em;
-  color: white;
 }
-
-#page-volunteer-index {
-  background-image: url("https://plasticfreeqac-space.nyc3.cdn.digitaloceanspaces.com/img/home_our_mission.webp");
-  background-size: cover;
-  background-color: #b8e2fc;
+#footer a {
+  color: #aaa;
 }
-#page-volunteer-index .content-body {
-  max-width: 50em;
-  margin: auto;
+#footer #footer-title {
+  display: block;
+  margin: 0;
+  padding: 0;
 }
-#page-volunteer-index section {
-  margin: 0.5em 0;
-  padding: 0.5em 0;
-  border-radius: 1em;
-  background-color: white;
-}
-#page-volunteer-index section .section-title {
-  text-align: center;
-  font-size: 18px;
+#footer #footer-title a {
+  font-size: 1.5em;
   font-weight: bold;
 }
-#page-volunteer-index section .section-body {
-  margin-top: 0.5em;
-  font-weight: normal;
-}
-#page-volunteer-index section .section-footer {
-  text-align: center;
-}
-
-#page-resources-index {
-  background-image: url("https://plasticfreeqac-space.nyc3.cdn.digitaloceanspaces.com/img/home_our_mission.webp");
-  background-size: cover;
-  background-color: #b8e2fc;
-}
-#page-resources-index h1 {
-  color: white;
-}
-#page-resources-index .content-body {
-  max-width: 50em;
-  margin: auto;
-}
-#page-resources-index section {
-  margin: 0.5em 0;
-  padding: 0.5em 0;
-  border-radius: 1em;
-  background-color: white;
-}
-#page-resources-index section .section-title {
-  text-align: center;
-  font-size: 18px;
-  font-weight: bold;
-}
-#page-resources-index section .section-body {
-  margin-top: 0.5em;
-  font-weight: normal;
-}
-
-#page-donate-index {
-  background-color: #b8e2fc;
-  background-image: url("https://plasticfreeqac-space.nyc3.digitaloceanspaces.com/img/home_hero_2.webp");
-}
-#page-donate-index .content-body {
-  max-width: 80em;
-  margin: auto;
-  padding: 2em;
-}
-#page-donate-index section {
-  width: 30em;
-  margin: 1em auto;
-  padding: 2em;
-  border-radius: 2em;
-  background-color: white;
-}
-#page-donate-index section .section-title {
-  text-align: center;
-  font-size: 18px;
-  font-weight: bold;
-}
-#page-donate-index section .section-body {
-  margin-top: 0.5em;
-  font-weight: normal;
-}
-#page-donate-index section:nth-child(odd) {
-  background-color: #eee;
-}
-
-#page-posts-index {
-  background: white;
-}
-#page-posts-index .content-title {
-  text-align: center;
-}
-#page-posts-index .content-subtitle {
-  color: #666;
-  text-align: center;
-}
-#page-posts-index .content-subtitle a {
-  color: #409621;
-}
-#page-posts-index .content-subtitle a:hover {
-  color: #52c02a;
+#footer #footer-title a:hover {
+  border-bottom: 1px solid #5c5;
   text-decoration: none;
 }
-#page-posts-index .content-body {
-  margin: auto;
-}
-#page-posts-index section {
-  margin: 0.5em 0;
-  padding: 0.5em 0;
-  background-color: white;
-  border-radius: 0.5em;
-}
-#page-posts-index section .section-title {
-  text-align: center;
-  font-size: 18px;
-  font-weight: bold;
-}
-#page-posts-index section .section-body {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  margin-top: 0.5em;
-  font-weight: normal;
-  list-style: none;
-}
-#page-posts-index section .section-body a {
-  color: black;
-}
-#page-posts-index section .section-body .section-block {
-  border-style: solid;
-  border-width: thin;
-  border-color: #666;
-  background-color: #eee;
-  width: 400px;
-  margin-bottom: 1em;
-  text-align: center;
-  border-radius: 0.5em;
-}
-#page-posts-index section .section-body .section-block img {
-  width: 100%;
-}
-#page-posts-index section .section-body .section-block div:nth-of-type(1) {
-  font-size: 1em;
-  font-weight: bold;
-}
-#page-posts-index section .section-body .section-block div:nth-of-type(2) {
-  display: none;
-}
-#page-posts-index section .section-body .section-block div:nth-of-type(3) {
-  font-size: 0.75em;
-}
-
-#page-posts-view .content {
-  background-color: #eee;
-}
-#page-posts-view .content-title .post-author-date {
-  margin: 0 0 0.25em;
-  text-align: center;
-  font-weight: bold;
-}
-#page-posts-view .content-title .post-categories {
-  margin: 0.25em 0;
-  text-align: center;
-  font-weight: bold;
-}
-#page-posts-view .content-body {
-  padding: 1em 3em 0.25em;
-  max-width: 50em;
-  text-align: center;
-  margin: 1em auto 2em;
-  background-color: white;
-  border-style: solid;
-  border-color: #aaa;
-  border-width: thin;
-  border-radius: 0.5em;
-}
-#page-posts-view .content-body .post-image img {
-  width: 100%;
-}
-#page-posts-view .content-body .post-body {
-  padding: 2em 1em 1em;
-  text-align: left;
-}
-
-#page-about-index {
-  background-color: #ddd;
-}
-#page-about-index #hero {
-  background-image: url("https://plasticfreeqac-space.nyc3.digitaloceanspaces.com/img/about-banner.webp");
-  background-size: cover;
-  text-align: center;
-  height: 900px;
-  padding-top: 800px;
-  border-radius: 0 0 1em 1em;
-}
-#page-about-index #hero #hero-inner {
-  max-width: 70%;
-  margin: auto;
-  padding: 0.5em 0.25em;
-  border-radius: 1em;
-  background-color: #5cd231;
-  opacity: 0.9;
-  color: white;
-}
-#page-about-index #hero #hero-inner h1 {
-  color: white;
-}
-#page-about-index #hero #hero-inner section {
-  background-color: transparent;
-  color: white;
-}
-#page-about-index section {
-  margin: 0.5em 0;
-  padding: 0.25em 0.5em;
-  background-color: white;
-  color: black;
-}
-#page-about-index section .section-title {
-  text-align: center;
-  font-size: 18px;
-  font-weight: bold;
-}
-#page-about-index section .section-body {
-  margin-top: 0.5em;
-  font-weight: normal;
-}
-#page-about-index section .section-blocks {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  list-style: none;
-}
-#page-about-index section .section-blocks .section-block {
-  margin-bottom: 1em;
-}
-#page-about-index #section-vision, #page-about-index #section-mission, #page-about-index #section-history {
-  margin: 2em auto;
-  padding: 1em;
-  width: 40em;
-  border-radius: 1em;
-}
-#page-about-index #section-partners {
-  margin-bottom: 1.5em;
-  background-color: white;
-  border-radius: 1em;
-}
-#page-about-index #section-partners .section-block {
-  height: 3em;
-}
-#page-about-index #section-team {
-  border-radius: 1em;
-}
-#page-about-index #section-team .section-subtitle {
-  text-align: center;
-}
-#page-about-index #section-team .section-subtitle a:hover {
-  color: white;
-}
-#page-about-index #section-team .section-block {
-  margin-bottom: 1em;
-  width: 15em;
-  border-style: solid;
-  border-color: #666;
-  border-width: thin;
-  background: #666;
-  color: white;
-  border-radius: 0.5em;
-}
-#page-about-index #section-team .section-block img {
-  width: 100%;
-  border-radius: 0.5em 0.5em 0 0;
-}
-#page-about-index #section-team .section-block .member-info {
-  text-align: center;
-  background: #666;
-  color: white;
-}
-#page-about-index #section-team .section-block .member-info .member-title {
-  font-size: 0.75em;
-}
-#page-about-index #section-team .section-block .member-desc {
-  font-size: 0.75em;
-  text-align: left;
-  display: none;
-  padding: 0.5em;
-}
-
-#page-home-index {
-  background: white;
-}
-#page-home-index .content-banner {
-  text-align: center;
-}
-#page-home-index .content-banner img {
-  width: 100%;
-}
-#page-home-index .content-body {
-  max-width: 50em;
-  margin: auto;
-}
-#page-home-index section {
-  margin: 0.5em auto;
-  padding: 0.5em 1em;
-  background-color: #eee;
-}
-#page-home-index section .section-title {
-  text-align: center;
-  font-size: 18px;
-  font-weight: bold;
-}
-#page-home-index section .section-body {
-  margin-top: 0.5em;
-  font-weight: normal;
-}
-#page-home-index section .section-blocks {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  list-style: none;
-}
-#page-home-index section .section-blocks .section-block {
-  margin-bottom: 1em;
-}
-#page-home-index #section-partners {
-  margin-top: 1em;
-  margin-bottom: 1em;
-  border-radius: 1em;
-  border-style: solid;
-  border-width: thin;
-  border-color: #999;
-  background-color: white;
-}
-#page-home-index #section-partners .section-block {
-  height: 3em;
-}
-#page-home-index #section-process {
-  border-radius: 1em;
-}
-#page-home-index #section-process .section-block {
-  width: 20em;
-  height: 350px;
-  border-style: solid;
-  border-color: #666;
-  border-width: thin;
-  background-color: #8EE070;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-#page-home-index #section-process .section-block .section-block-inner {
-  border-style: solid;
-  border-color: #666;
-  border-width: thin;
-  background: #eee;
-  color: black;
-  margin: 300px auto 0;
-  width: 10em;
-  text-align: center;
-}
-#page-home-index #section-process .section-block-1 {
-  background-image: url("https://plasticfreeqac-space.nyc3.digitaloceanspaces.com/img/home_the_problem.webp");
-}
-#page-home-index #section-process .section-block-2 {
-  background-image: url("https://plasticfreeqac-space.nyc3.digitaloceanspaces.com/img/home-learn-more.jpg");
-}
-#page-home-index #section-process .section-block-3 {
-  background-image: url("https://plasticfreeqac-space.nyc3.digitaloceanspaces.com/img/home_take_action.webp");
-}
-#page-home-index #section-instagram {
-  margin: auto;
-  max-width: 700px;
-  padding: 0.5em 1em;
-  text-align: center;
-  border-radius: 1em;
-  background-color: white;
-}
-#page-home-index #section-instagram iframe {
-  margin: auto !important;
-  width: 90%;
-}
-#page-home-index #section-instagram .x1nhvcw1 {
-  display: none;
-}
-#page-home-index #section-newsletter {
-  margin: 1em auto;
-  max-width: 50%;
-  border-radius: 1em;
-  text-align: center;
-}
-#page-home-index #section-newsletter .section-label {
-  display: inline-block;
-  margin-bottom: 0.5em;
-  width: 6em;
-}
-#page-home-index #section-newsletter input {
-  display: inline-block;
-  margin-bottom: 0.5em;
-  width: 20em;
-}
-#page-home-index #section-donate {
-  margin: auto;
-  max-width: 30em;
-  text-align: center;
-  border-radius: 1em;
-}
-#page-home-index #section-donate .section-title, #page-home-index #section-donate .section-body {
-  text-align: center;
-}
-#page-home-index #section-mission {
-  background-image: url("https://plasticfreeqac-space.nyc3.digitaloceanspaces.com/img/home_our_mission.webp");
-  background-size: cover;
-  height: 400px;
-  margin: 0.5em auto;
-  margin-bottom: 0.5em;
-  padding: 60px 20px 20px;
-  text-align: center;
-  color: white;
-  border-radius: 1em;
-}
-#page-home-index #section-mission #section-mission-inner {
-  margin: auto;
-  max-width: 90%;
-  border-radius: 1em;
-}
-#page-home-index #section-mission #section-mission-inner .section-title {
-  font-size: 2em;
-}
-#page-home-index #section-mission #section-mission-inner .section-body {
-  font-size: 1.25em;
-}
-#page-home-index #section-banner {
-  text-align: center;
-  padding: 1.5em 3em;
-  background-color: white;
-  border-radius: 1em;
-  max-width: 1000px;
-}
-#page-home-index #section-banner img {
-  width: 100%;
-}
-#page-home-index #hero {
-  margin: 0 auto;
-  padding: 120px 2em 0;
-  height: 600px;
-  background-color: #ccc;
-  background-image: url("https://plasticfreeqac-space.nyc3.digitaloceanspaces.com/img/home_hero_1.webp");
-  background-size: cover;
-  color: white;
-  border-radius: 0 0 1em 1em;
-}
-#page-home-index #hero #hero-inner {
-  margin: auto;
-  width: 100%;
-  padding: 1em 1em 2em;
-  border-radius: 2em;
-}
-#page-home-index #hero h1 {
-  color: white;
-  font-size: 3em;
-  font-weight: 900;
-}
-#page-home-index #hero h2 {
-  margin: auto;
-  text-align: center;
-  max-width: 80%;
-  color: white;
-  font-size: 1.55em;
-  font-weight: bold;
-}
-#page-home-index #hero .images {
-  margin-top: 2em;
-  text-align: center;
-}
-#page-home-index #hero .images img {
-  margin: 0 0.5em;
-  height: 60px;
-}
-#page-home-index #hero .cta {
-  margin-top: 2em;
-  text-align: center;
-  color: white;
-}
-
-#page-events-index {
-  background: white;
-}
-#page-events-index .content-title {
-  text-align: center;
-}
-#page-events-index .content-subtitle {
-  color: #666;
-  text-align: center;
-}
-#page-events-index .content-subtitle a {
-  color: #409621;
-}
-#page-events-index .content-subtitle a:hover {
-  color: #52c02a;
+#footer #footer-title a.active {
   text-decoration: none;
 }
-#page-events-index .content-body {
-  margin: auto;
+#footer #footer-title #footer-title-left {
+  color: #229ADD;
 }
-#page-events-index section {
-  margin: 0.5em 0;
-  padding: 0.5em 0;
-  background-color: white;
-  border-radius: 0.5em;
+#footer #footer-title #footer-title-right {
+  color: #55CC56;
 }
-#page-events-index section .section-title {
-  text-align: center;
-  font-size: 18px;
-  font-weight: bold;
+#footer #footer-content {
+  margin: 1em 0 0;
 }
-#page-events-index section .section-body {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  margin-top: 0.5em;
-  font-weight: normal;
-  list-style: none;
+#footer #footer-copyright {
+  margin: 1em 0 0;
+  padding: 1em 2em 0;
+  color: #666;
 }
-#page-events-index section .section-body a {
+#footer #footer-copyright span {
+  padding-top: 0.75em;
+  border-top-style: solid;
+  border-top-width: thin;
+  border-top-color: #666;
+}
+
+#main {
+  background: white;
   color: black;
+  margin: 0;
+  padding: 0;
 }
-#page-events-index section .section-body .section-block {
-  border-style: solid;
-  border-width: thin;
-  border-color: #666;
-  background-color: #eee;
-  width: 400px;
-  margin-bottom: 1em;
-  text-align: center;
-  border-radius: 0.5em;
-}
-#page-events-index section .section-body .section-block .section-image-wrapper {
-  max-height: 15em;
+#main #main-banner {
+  max-height: 400px;
   overflow: hidden;
 }
-#page-events-index section .section-body .section-block img {
+#main #main-banner img {
   width: 100%;
 }
-#page-events-index section .section-body .section-block div:nth-of-type(2) {
-  font-size: 1em;
+#main #main-inner {
+  padding: 0;
+}
+#main #main-inner #main-header {
+  margin: 1em 0;
+  text-align: center;
+}
+#main #main-inner #main-header h1 {
+  font-size: 2em;
   font-weight: bold;
-  border-top: solid #aaa thin;
 }
-#page-events-index section .section-body .section-block div:nth-of-type(3) {
-  font-size: 0.75em;
-}
-#page-events-index section .section-body .section-block div:nth-of-type(4) {
-  font-size: 0.75em;
+#main #main-inner .row {
+  margin-bottom: 0;
 }
 
-#page-events-view .content {
-  background-color: #eee;
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1400px;
+  }
 }
-#page-events-view .content-title .event-author-date {
-  margin: 0 0 0.25em;
+body {
+  font-size: 16px;
+}
+body a {
+  color: #2b902b;
+}
+body a:hover {
+  color: #1f691f;
+}
+
+.block {
+  padding: 0;
+}
+.block .block-inner {
+  height: 100%;
+  border: none;
+}
+.block .block-inner .block-title {
+  background: white;
+  color: black;
+  padding: 0.25em;
   text-align: center;
   font-weight: bold;
+  font-size: 1.25em;
 }
-#page-events-view .content-title .event-categories {
-  margin: 0.25em 0;
+.block .block-inner .block-subtitle {
+  background: #ddd;
   text-align: center;
+  vertical-align: middle;
+  min-height: 2.5em;
+}
+.block .block-inner .block-subtitle img {
+  height: 1.5em;
+  margin: 0.5em;
+}
+.block .block-inner .block-body {
+  background: white;
+  color: black;
+  padding: 1em 1em 0.5em;
+}
+.block .block-inner .block-body .block-body-list {
+  text-align: center;
+}
+.block .block-inner .block-body .block-body-list ul {
+  margin: 1em auto;
+  display: inline-block;
+  text-align: left;
+  max-width: 1200px;
+}
+.block .block-inner .block-body .block-body-button-more {
+  margin-top: 0.5em;
+  text-align: center;
+}
+.block .block-inner .block-button {
+  text-align: center;
+  margin: 0.5em 0.25em 1em;
+}
+.block .block-inner .block-button a {
+  display: inline-block;
+  margin: 0.25em;
+  min-width: 5em;
+}
+
+.btn-primary {
+  background-color: #5c5;
+  border-color: #5c5;
+  border-radius: 0;
   font-weight: bold;
 }
-#page-events-view .content-body {
-  padding: 1em 3em 0.25em;
-  max-width: 50em;
-  text-align: center;
-  margin: 1em auto 2em;
-  background-color: white;
-  border-style: solid;
-  border-color: #aaa;
-  border-width: thin;
-  border-radius: 0.5em;
+.btn-primary:hover {
+  background-color: #7cd87c;
+  border-color: #7cd87c;
 }
-#page-events-view .content-body .event-image img {
+
+ul {
+  padding-left: 1em;
+}
+ul li {
+  list-style: none;
+  margin-bottom: 0.15em;
+  margin-top: 0.15em;
+}
+ul li::before {
+  content: "•";
+  color: #5c5;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+#awards-block .block-image, #recognition-banner .block-image {
+  text-align: center;
+  margin: 0;
+}
+#awards-block .block-image img, #recognition-banner .block-image img {
+  max-width: 90%;
+  height: 80px;
+  margin: 0;
+}
+#awards-block .block-image img:first-child, #recognition-banner .block-image img:first-child {
+  margin-top: 0.5em;
+  margin-right: 3em;
+}
+#awards-block .block-body, #recognition-banner .block-body {
+  text-align: center;
+  padding: 0.5em 1em 1em;
+}
+
+#main #content #products-banner {
+  padding: 0.5em;
+}
+#main #content #products-banner .block .block-inner .block-image {
+  text-align: center;
+  margin: 1em 0 1em;
+}
+#main #content #products-banner .block .block-inner .block-image img {
+  height: 8em;
+  margin: 0 3em;
+}
+#main #content #products-banner .block .block-inner .block-body {
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+#main #content #products-banner .block .block-inner .block-body ul {
+  display: inline-block;
+  text-align: left;
+  padding: 0;
+}
+
+#main #content #mission .block .block-inner {
+  padding: 2em 2em;
+}
+#main #content #mission .block .block-inner .block-image {
+  text-align: center;
+}
+#main #content #mission .block .block-inner .block-image img {
+  height: 15em;
+}
+#main #content #mission .block .block-inner .block-body {
+  padding-top: 0.5em;
+}
+
+#main #content #contact-form {
+  padding: 2em 0;
+  background: #d8effc;
+}
+#main #content #contact-form .block-title {
+  background: transparent;
+}
+#main #content #contact-form .block-body {
+  margin: 0 0 1.5em;
+  padding: 0;
+  text-align: center;
+  background: transparent;
+}
+#main #content #contact-form .block-image {
+  padding: 1em 3em 0;
+  text-align: center;
+}
+#main #content #contact-form .block-image img {
+  width: 100%;
+  max-height: 28em;
+}
+#main #content #contact-form .block-form {
+  width: 90%;
+  margin: 0 auto 0.5em;
+}
+#main #content #contact-form .block-form form {
   width: 100%;
 }
-#page-events-view .content-body .event-body {
-  padding: 2em 1em 1em;
+#main #content #contact-form .block-form form .block-body-form-label {
+  font-weight: bold;
   text-align: left;
 }
-#page-events-view .content-body .event-link {
+#main #content #contact-form .block-form form .block-body-form-input {
+  margin-bottom: 0.5em;
+}
+#main #content #contact-form .block-form form .block-body-form-input input, #main #content #contact-form .block-form form .block-body-form-input textarea {
+  width: 100%;
+}
+#main #content #contact-form .block-form form .block-body-form-input textarea {
+  height: 12em;
+}
+#main #content #contact-form .block-form form .block-body-form-button {
+  margin-top: 0.25em;
+}
+
+#main #content #principals {
+  padding: 1.5em;
+  background: #ddd;
+}
+#main #content #principals .block {
+  margin: 1.5em 0;
+}
+#main #content #principals .block .block-inner {
+  margin: 0 1em;
+  padding: 0 1em;
+}
+#main #content #principals .block .block-inner .block-image {
+  text-align: center;
+}
+#main #content #principals .block .block-inner .block-image img {
+  margin-bottom: -50px;
+  height: 150px;
+  border-radius: 75px;
+}
+#main #content #principals .block .block-inner .block-title {
+  padding-top: 4em;
+}
+#main #content #principals #principals-title {
+  margin: 0;
+  font-size: 2em;
+  font-weight: bold;
   text-align: center;
 }
 
-#page-newsletters-index {
-  background-image: url("https://plasticfreeqac-space.nyc3.cdn.digitaloceanspaces.com/img/home_our_mission.webp");
-  background-size: cover;
-  background-color: #b8e2fc;
+#capabilities {
+  margin: 0;
+  background: #d8effc;
 }
-#page-newsletters-index section {
+#capabilities .block {
   background: transparent;
-  padding: 1em;
-  margin: 2em auto 8em;
-  border-radius: 0.5em;
 }
-#page-newsletters-index section table td {
-  background-color: white;
+#capabilities .block .block-title {
+  margin: 0.5em 0 0;
+  background: transparent;
 }
-
-#page-waivers-create {
-  background-image: url("https://plasticfreeqac-space.nyc3.cdn.digitaloceanspaces.com/img/home_our_mission.webp");
-  background-size: cover;
-  background-color: #b8e2fc;
+#capabilities .block .block-image {
+  margin-top: 2em;
+  background: transparent;
 }
-#page-waivers-create section {
-  background: white;
-  padding: 1em;
-  margin: 2em auto 2em;
-  border-radius: 0.5em;
-}
-#page-waivers-create #section-content {
-  max-width: 50em;
-  margin: 1em auto;
-}
-#page-waivers-create #section-content ul {
-  margin: 0.5em 0;
-}
-#page-waivers-create #section-form {
-  max-width: 40em;
-  background-color: #ddd;
-}
-#page-waivers-create #section-form form table th, #page-waivers-create #section-form form table td {
-  background-color: transparent;
-  border: none;
-}
-#page-waivers-create #section-form form table table th {
-  text-align: right;
-}
-#page-waivers-create #section-form form table input {
+#capabilities .block .block-image img {
   width: 100%;
 }
-#page-waivers-create #section-form form table input.btn {
-  width: 10em;
+#capabilities .block .block-body {
+  padding: 0 2em 1em;
+  background: transparent;
 }
-#page-waivers-create #section-form form div {
+#capabilities .block .block-body .cap {
+  margin: 1em 0;
+  padding: 0;
+  display: flex;
+}
+#capabilities .block .block-body .cap .cap-icon {
+  float: left;
+  width: 20%;
+  vertical-align: top;
+}
+#capabilities .block .block-body .cap .cap-icon img {
+  width: 80%;
+  margin-top: 1em;
+}
+#capabilities .block .block-body .cap .cap-body {
+  margin-left: 1em;
+  float: right;
+  width: 75%;
+}
+#capabilities .block .block-body .cap .cap-body .cap-title {
+  font-size: 1.25em;
+  font-weight: bold;
+}
+#capabilities .block .block-button {
+  background: transparent;
+}
+
+#applications #main #content #custom-tools-summary {
+  padding: 1em 2em 0;
+  background: #d8effc;
+}
+#applications #main #content #custom-tools-summary .block-title, #applications #main #content #custom-tools-summary .block-body, #applications #main #content #custom-tools-summary .block-button {
+  background: transparent;
+}
+
+#applications #main #content #custom-tools {
+  padding: 1em;
+  background: #d8effc;
+}
+#applications #main #content #custom-tools .blocks-title {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+#applications #main #content #custom-tools .block {
+  padding: 1em;
+}
+#applications #main #content #custom-tools .block .block-inner {
+  border-style: solid;
+  border-width: thin;
+  border-color: black;
+  border-radius: 1em;
+  background: white;
+}
+#applications #main #content #custom-tools .block .block-inner .block-title {
+  background: transparent;
+}
+#applications #main #content #custom-tools .block .block-inner .block-body {
+  background: transparent;
+}
+
+#applications #main #content #apps-summary {
+  background: lightgrey;
+  padding: 1em 2em 0;
+}
+#applications #main #content #apps-summary .block-title, #applications #main #content #apps-summary .block-body, #applications #main #content #apps-summary .block-button {
+  background: transparent;
+}
+
+#applications #main #content #apps {
+  padding: 1em;
+  background: lightgrey;
+}
+#applications #main #content #apps .block {
+  padding: 1em;
+}
+#applications #main #content #apps .block .block-inner {
+  border-style: solid;
+  border-width: thin;
+  border-color: black;
+  border-radius: 1em;
+  background: white;
+}
+#applications #main #content #apps .block .block-inner .block-title {
+  background: transparent;
+}
+#applications #main #content #apps .block .block-inner .block-image {
+  float: right;
+  margin: 1em;
+}
+#applications #main #content #apps .block .block-inner .block-image img {
+  height: 100px;
+}
+#applications #main #content #apps .block .block-inner .block-body {
+  background: transparent;
+}
+
+#main #content #applications_summary {
+  padding: 0 2em 2em;
+}
+#main #content #applications_summary .block-image {
+  margin-top: 8em;
+  text-align: center;
+}
+#main #content #applications_summary .block-image img {
+  width: 80%;
+  border-style: double;
+}
+#main #content #applications_summary .block-body-list {
+  text-align: left;
+}
+
+#applications #main #content #dev-tools {
+  padding: 1em;
+  background: #d8effc;
+}
+#applications #main #content #dev-tools .block {
+  padding: 1em;
+}
+#applications #main #content #dev-tools .block .block-inner {
+  border-style: solid;
+  border-width: thin;
+  border-color: black;
+  border-radius: 1em;
+  background: white;
+}
+#applications #main #content #dev-tools .block .block-inner .block-title {
+  background: transparent;
+}
+#applications #main #content #dev-tools .block .block-inner .block-body {
+  background: transparent;
+}
+
+#products #main #content #devices {
+  background: #d8effc;
+  padding: 1em 2em;
+}
+#products #main #content #devices .block {
+  padding: 1em;
+}
+#products #main #content #devices .block .block-inner {
+  min-height: 200px;
+  background: white;
+  border-style: solid;
+  border-width: thin;
+  border-color: black;
+  border-radius: 1em;
+}
+#products #main #content #devices .block .block-inner .block-title {
+  background: transparent;
+}
+#products #main #content #devices .block .block-inner .block-subtitle {
+  background: lightgrey;
+}
+#products #main #content #devices .block .block-inner .block-image {
+  float: right;
+  margin: 1em;
+}
+#products #main #content #devices .block .block-inner .block-image img {
+  height: 100px;
+}
+#products #main #content #devices .block .block-inner .block-button {
+  background: transparent;
+}
+
+#main #content #apps-banner {
+  padding: 1.5em;
+}
+#main #content #apps-banner .block .block-inner .block-image {
+  text-align: center;
+  margin: 1em 0 1em;
+}
+#main #content #apps-banner .block .block-inner .block-image img {
+  height: 8em;
+  margin: 0 3em;
+}
+#main #content #apps-banner .block .block-inner .block-body {
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+#main #content #apps-banner .block .block-inner .block-body ul {
+  display: inline-block;
+  text-align: left;
+  padding: 0;
+}
+
+#main #content #process .block-image {
+  margin-top: 3em;
+  text-align: center;
+}
+#main #content #process .block-image img {
+  width: 30%;
+}
+#main #content #process .block-body-list {
+  text-align: left;
+}
+
+#processes #main #content #process-steps {
+  background: #d8effc;
+  padding: 1em 2em;
+}
+#processes #main #content #process-steps .block {
+  padding: 1em;
+}
+#processes #main #content #process-steps .block .block-inner {
+  border: black 1px solid;
+  border-radius: 1em;
+  background: white;
+}
+#processes #main #content #process-steps .block .block-inner .block-title {
+  background: transparent;
+}
+#processes #main #content #process-steps .block .block-inner .block-body {
+  background: transparent;
+  padding-top: 0.5em;
+}
+
+#main #content #background-values {
+  padding: 1em;
+  background: #d8effc;
+}
+#main #content #background-values .blocks-title {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+#main #content #background-values .block {
+  padding: 1em;
+}
+#main #content #background-values .block .block-inner {
+  border-style: solid;
+  border-width: thin;
+  border-color: black;
+  border-radius: 1em;
+  background: white;
+}
+#main #content #background-values .block .block-inner .block-title {
+  background: transparent;
+}
+#main #content #background-values .block .block-inner .block-body {
+  background: transparent;
+}
+
+#main #content #purpose {
+  padding: 1em 2em 2em;
+}
+#main #content #purpose .block-image {
+  margin-top: 1em;
+  text-align: center;
+}
+#main #content #purpose .block-image img {
+  width: 80%;
+  border-style: double;
+}
+#main #content #purpose .block-body-list {
+  text-align: left;
+}
+
+.block-menu .block-inner {
+  background: transparent;
+}
+.block-menu .block-inner .block-title {
+  display: none;
+}
+.block-menu .block-inner .block-body {
+  padding: 0 1em !important;
+  border-right-style: solid;
+  border-right-width: 1px;
+  background: transparent;
+}
+.block-menu .block-inner .block-body ul {
+  padding: 0.25em 0;
+}
+.block-menu .block-inner .block-body ul li {
+  list-style: none;
+}
+.block-menu .block-inner .block-body ul li:before {
+  content: none;
+}
+.block-menu .block-inner .block-body ul li a {
+  color: black;
+  display: block;
+  padding: 0.15em 0.25em 0.15em 0.5em;
+  font-size: 1.05em;
+  font-weight: 500;
+  border-bottom: 1px solid transparent;
+}
+.block-menu .block-inner .block-body ul li a:hover {
+  text-decoration: none;
+  background: #d8effc;
+}
+.block-menu .block-inner .block-body ul li a.active {
+  text-decoration: none;
+  color: #229ADD;
+}
+.block-menu .block-inner .block-body ul ul {
+  margin-left: 0.5em;
+}
+
+#main #content #agile {
+  background: lightgrey;
+  padding: 1.5em;
+}
+#main #content #agile .block-title {
+  background: transparent;
+}
+#main #content #agile .block-image {
+  padding: 1em;
+  text-align: center;
+}
+#main #content #agile .block-image img {
+  height: 10em;
+  margin: 0 1em;
+}
+
+#main #content #embedded {
+  padding: 0 2em 2em;
+}
+#main #content #embedded .block-image {
+  margin-top: 1em;
+  text-align: center;
+}
+#main #content #embedded .block-image img {
+  width: 80%;
+  border-style: double;
+}
+#main #content #embedded .block-body-list {
+  text-align: left;
+}
+
+#home #main #main-banner {
+  position: relative;
+}
+#home #main #main-banner img {
+  margin-top: 0;
+}
+#home #main #main-banner img.img-main-banner-overlay {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  height: 80%;
+  width: auto;
+  border-radius: 10px;
+  box-shadow: 4px 4px #ccc;
+}
+#home #main #main-banner #home-banner-overlay {
+  position: absolute;
+  top: 3em;
+  right: 2em;
+  background: #666;
+  opacity: 0.7;
+  border-radius: 1em;
+  padding: 0.5em 1em 1em 2em;
+}
+#home #main #main-banner #home-banner-overlay #home-banner-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #55CC56;
+}
+#home #main #main-banner #home-banner-overlay #home-banner-title #home-banner-title-left {
+  color: #55CC56;
+}
+#home #main #main-banner #home-banner-overlay #home-banner-title #home-banner-title-right {
+  color: #229ADD;
+}
+#home #main #main-banner #home-banner-overlay #home-banner-tagline {
+  width: 20em;
+  font-size: 1.25em;
+  color: white;
+}
+#home #main #main-header {
+  display: none;
+}
+#home #main #content #awards {
+  background: #d8effc;
+}
+#home #main #content #awards .block-title, #home #main #content #awards .block-body {
+  background: transparent;
+}
+#home #main #content #contact {
+  background: #d8effc;
+}
+#home #main #content #contact .block-title, #home #main #content #contact .block-body {
+  background: transparent;
+}
+
+#applications #page #main #main-banner {
+  background: #aaa;
+  padding: 1em;
+  text-align: center;
+}
+#applications #page #main #main-banner img {
+  width: auto;
+  height: 65px;
+  margin: 0 0.25em;
+  padding: 5px;
+  border-style: double;
+  background: white;
+}
+@media screen and (min-width: 800px) {
+  #applications #page #main #main-banner img {
+    height: 75px;
+    margin: 0 1em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #applications #page #main #main-banner img {
+    margin: 0 2em;
+  }
+}
+
+#products #page #main #main-banner {
+  background: #aaa;
+  padding: 1em;
+  text-align: center;
+}
+#products #page #main #main-banner img {
+  width: auto;
+  height: 65px;
+  margin: 0 0.25em;
+  padding: 5px;
+  border-style: double;
+  background: white;
+}
+@media screen and (min-width: 800px) {
+  #products #page #main #main-banner img {
+    height: 75px;
+    margin: 0 1em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #products #page #main #main-banner img {
+    margin: 0 2em;
+  }
+}
+
+#processes #page #main #main-banner {
+  background: #aaa;
+  padding: 1em;
+  text-align: center;
+}
+#processes #page #main #main-banner img {
+  width: auto;
+  height: 65px;
+  margin: 0 0.25em;
+  padding: 5px;
+  border-style: double;
+  background: white;
+}
+@media screen and (min-width: 800px) {
+  #processes #page #main #main-banner img {
+    height: 75px;
+    margin: 0 1em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #processes #page #main #main-banner img {
+    margin: 0 2em;
+  }
+}
+
+.msx .block:not(.block-menu) .block-inner .block-image {
+  float: left;
+  margin: 2em 3em 2em 2em;
+  width: 250px;
+}
+.msx .block:not(.block-menu) .block-inner .block-image img {
+  width: 250px;
+  height: auto;
+}
+.msx .block:not(.block-menu) .block-inner .block-body {
+  padding: 2em;
+  margin-left: 300px;
+}
+.msx .block:not(.block-menu) .block-inner .block-body ul {
+  margin-top: 1em;
+}
+.msx .block:not(.block-menu) .block-inner .block-body ul li {
+  list-style: none;
+  margin-bottom: 0.15em;
+  margin-top: 0.15em;
+}
+.msx .block:not(.block-menu) .block-inner .block-body ul li::before {
+  content: "•";
+  color: #5c5;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+.msx .block:not(.block-menu) .block-inner .block-body ul li ul {
+  margin: 0.5em 0;
+}
+
+.msx-products-linear-motors .block-image img {
+  display: block;
+}
+
+.msx-services .msx .block:not(.block-menu) .block-inner .block-image {
+  float: none;
+  text-align: left;
+  display: block;
+  width: 100%;
+  margin: 2em;
+}
+.msx-services .msx .block:not(.block-menu) .block-inner .block-image img {
+  display: inline-block;
+  height: 220px;
+  width: auto;
+}
+.msx-services .msx .block:not(.block-menu) .block-inner .block-image img:nth-child(n+2) {
+  margin-top: 12px;
+}
+.msx-services .msx .block:not(.block-menu) .block-inner .block-body {
+  margin: 2em;
+  padding: 0;
+}
+
+.msx-sonic-mixers .msx .block:not(.block-menu) .block-inner .block-title a {
+  color: white;
+  padding: 0.15em 1em;
+}
+.msx-sonic-mixers .msx .block:not(.block-menu) .block-inner .block-title a:hover {
+  background: #5c5;
+  text-decoration: none;
+}
+.msx-sonic-mixers .msx .block:not(.block-menu) .block-inner .block-image {
+  float: none;
+  text-align: center;
+  display: block;
+  width: 100%;
+  margin: 2em 0;
+}
+.msx-sonic-mixers .msx .block:not(.block-menu) .block-inner .block-image img {
+  display: inline-block;
+  height: 220px;
+  width: auto;
+  margin: 1em;
+}
+.msx-sonic-mixers .msx .block:not(.block-menu) .block-inner .block-image img.msx-add-border {
+  border: 1px solid navy;
+}
+.msx-sonic-mixers .msx .block:not(.block-menu) .block-inner .block-body {
+  margin: 1em 1em 2em;
+  padding: 0;
   text-align: center;
 }
 
-#page-waivers-view {
-  background-image: url("https://plasticfreeqac-space.nyc3.cdn.digitaloceanspaces.com/img/home_our_mission.webp");
-  background-size: cover;
-  background-color: #b8e2fc;
+.msx-products .msx .block:not(.block-menu) .block-inner .block-title a {
+  color: white;
+  padding: 0.15em 1em;
 }
-#page-waivers-view section {
-  background: white;
-  padding: 1em;
-  margin: 2em auto 2em;
-  border-radius: 0.5em;
-  max-width: 40em;
+.msx-products .msx .block:not(.block-menu) .block-inner .block-title a:hover {
+  background: #5c5;
+  text-decoration: none;
 }
-#page-waivers-view #section-content {
-  max-width: 50em;
-  margin: 1em auto;
-}
-#page-waivers-view #section-content ul {
-  margin: 0.5em 0;
-}
-
-#page-members-create {
-  background-image: url("https://plasticfreeqac-space.nyc3.cdn.digitaloceanspaces.com/img/home_our_mission.webp");
-  background-size: cover;
-  background-color: #b8e2fc;
-}
-#page-members-create section {
-  background: white;
-  padding: 1em;
-  margin: 2em auto 2em;
-  border-radius: 0.5em;
-}
-#page-members-create #section-content {
-  max-width: 50em;
-  margin: 1em auto;
-}
-#page-members-create #section-content ul {
-  margin: 0.5em 0;
-}
-#page-members-create #section-form {
-  max-width: 40em;
-  background-color: #ddd;
-}
-#page-members-create #section-form form table th, #page-members-create #section-form form table td {
-  background-color: transparent;
-  border: none;
-}
-#page-members-create #section-form form table table th {
-  text-align: right;
-}
-#page-members-create #section-form form table input {
+.msx-products .msx .block:not(.block-menu) .block-inner .block-image {
+  float: none;
+  text-align: center;
+  display: block;
   width: 100%;
+  margin: 2em 0;
 }
-#page-members-create #section-form form table input.btn {
-  width: 10em;
+.msx-products .msx .block:not(.block-menu) .block-inner .block-image img {
+  display: inline-block;
+  height: 220px;
+  width: auto;
+  margin: 1em;
 }
-#page-members-create #section-form form div {
+.msx-products .msx .block:not(.block-menu) .block-inner .block-image img.msx-add-border {
+  border: 1px solid navy;
+}
+.msx-products .msx .block:not(.block-menu) .block-inner .block-body {
+  margin: 1em 1em 2em;
+  padding: 0;
   text-align: center;
 }
 
-#page-members-view {
-  background-image: url("https://plasticfreeqac-space.nyc3.cdn.digitaloceanspaces.com/img/home_our_mission.webp");
-  background-size: cover;
-  background-color: #b8e2fc;
+.msx-video .block:not(.block-menu) .block-inner .block-image {
+  width: auto;
+  float: none;
+  text-align: center;
+  margin: 4em 2em 2em;
 }
-#page-members-view section {
-  background: white;
-  padding: 1em;
-  margin: 2em auto 2em;
-  border-radius: 0.5em;
-  max-width: 40em;
-}
-#page-members-view #section-content {
-  max-width: 50em;
-  margin: 1em auto;
-}
-#page-members-view #section-content ul {
-  margin: 0.5em 0;
-}
-
-#page-participants-create {
-  background-image: url("https://plasticfreeqac-space.nyc3.cdn.digitaloceanspaces.com/img/home_our_mission.webp");
-  background-size: cover;
-  background-color: #b8e2fc;
-}
-#page-participants-create section {
-  background: white;
-  padding: 1em;
-  margin: 2em auto 2em;
-  border-radius: 0.5em;
-}
-#page-participants-create #section-content {
-  max-width: 50em;
-  margin: 1em auto;
-}
-#page-participants-create #section-content ul {
-  margin: 0.5em 0;
-}
-#page-participants-create #section-form {
-  max-width: 40em;
-  background-color: #ddd;
-}
-#page-participants-create #section-form form table th, #page-participants-create #section-form form table td {
-  background-color: transparent;
-  border: none;
-}
-#page-participants-create #section-form form table table th {
-  text-align: right;
-}
-#page-participants-create #section-form form table input {
-  width: 100%;
-}
-#page-participants-create #section-form form table input.btn {
-  width: 10em;
-}
-#page-participants-create #section-form form div {
+.msx-video .block:not(.block-menu) .block-inner .block-body {
+  margin: 1em;
   text-align: center;
 }
+.msx-video .block:not(.block-menu) .block-inner .block-body ul {
+  display: inline-block;
+  margin: 0 auto;
+  text-align: left;
+}
 
-#page-participants-view {
-  background-image: url("https://plasticfreeqac-space.nyc3.cdn.digitaloceanspaces.com/img/home_our_mission.webp");
-  background-size: cover;
-  background-color: #b8e2fc;
+#contact #main #main-header {
+  display: none;
 }
-#page-participants-view section {
-  background: white;
-  padding: 1em;
-  margin: 2em auto 2em;
-  border-radius: 0.5em;
-  max-width: 40em;
+#contact #main #content #contact-form {
+  padding: 1em 0 3em;
 }
-#page-participants-view #section-content {
-  max-width: 50em;
+#contact #main #content #contact-form .block-title {
+  font-size: 2em;
+}
+
+body.about .blocks .block .block-inner .block-body .block-body-list {
+  text-align: center;
+}
+body.about .blocks .block .block-inner .block-body .block-body-list ul {
   margin: 1em auto;
+  display: inline-block;
+  text-align: left;
+  max-width: 1200px;
 }
-#page-participants-view #section-content ul {
-  margin: 0.5em 0;
+body.about .blocks .block .block-inner .block-body .block-body-button-more a {
+  margin: 0.5em auto;
+  min-width: 6em;
+  display: inline-block;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+@media screen and (min-width: 1000px) {
+  body.about .blocks .block .block-inner .block-body .block-body-button-more a {
+    display: inline-block;
+  }
+}
+
+body.about .blocks.principals .block .block-inner .block-body .block-body-button-more a {
+  display: inline-block;
+  width: 8em;
 }
 
 /*# sourceMappingURL=style.css.map */

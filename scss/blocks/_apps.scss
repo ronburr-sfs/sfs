@@ -1,0 +1,35 @@
+#applications #main #content #apps-summary {
+    background: lightgrey;
+    padding: 1em 2em 0;
+    .block-title, .block-body, .block-button {
+        background: transparent;      
+    }
+}
+
+#applications #main #content #apps {
+    padding: 1em;
+    background: lightgrey;
+    .block {
+        padding: 1em;
+        .block-inner {
+            border-style: solid;
+            border-width: thin;
+            border-color: black;
+            border-radius: 1em;
+            background: white;
+            .block-title {
+                background: transparent;
+            }
+            .block-image {
+                float: right;
+                margin: 1em;
+                img {
+                    height: 100px;
+                }
+            }
+            .block-body {
+                background: transparent;
+            }
+        }
+    }
+}

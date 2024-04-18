@@ -1,0 +1,9 @@
+body {
+  font-size: 16px;
+  a {
+    color: darken( $color-secondary, 20% );
+    &:hover {
+      color: darken( $color-secondary, 30% );  
+    }
+  }
+}

@@ -1,0 +1,136 @@
+#personal {
+    #header {
+        position: fixed;
+        top: 0;
+        z-index: 100;
+        overflow: hidden;
+        #header-inner {
+            #header-nav .social {
+                width: 3em;
+         
+            }
+        }
+    }
+    #main {
+        margin: 5em 0 0;
+        scroll-margin-top: 5em;
+        #main-banner {
+            display: none;
+        }
+        #main-inner {
+            #main-header {
+                display: none;
+                margin: 0;
+            }
+            #content .blocks {
+                .block {
+                    background: transparent;
+                    .block-inner {
+                        .block-title {
+                            background: transparent;
+                        }
+                        .block-image {
+                            margin: 0;
+                            padding: 1em;
+                            text-align: center;
+                            img {
+                                max-width: 70%;
+                                margin-top: 3em;
+                                border-style: double;
+                            }
+                        }
+                        .block-body {
+                            padding-top: 0;
+                            background: transparent;
+                            .block-title {
+                                font-size: 1.5em;
+                                background: transparent;
+                            }
+                            .block-heading {
+                                margin: 0.5em 0 0;
+                                font-weight: bold;
+                                font-size: 1em;
+                            }
+                            .block-tagline {
+                                margin-top: 0em;
+                            }
+                        }
+                    }
+                }
+            }
+        }   
+    }
+}
+
+#personal #main #main-inner #content {
+    #personal-summary {
+        background: white;
+    }
+    #personal-interests {
+        background: $colorBlueVeryLight;
+    }
+    #personal-skills-technical {
+        background: #ddd;
+    }
+    #personal-skills-core {
+        background: white;
+    }
+    #personal-experience {
+        background: $colorBlueVeryLight;
+    }
+    #personal-experience-other {
+        background: #ddd;
+    }
+    #personal-awards {
+        background: white;
+    }
+    #personal-education {
+        background: $colorBlueVeryLight;
+    }
+    #personal-training {
+        background: #ddd;
+    }
+    #personal-hobbies {
+        background: $colorBlueVeryLight;
+    }
+}
+
+#personal #main #main-inner #content #personal-awards-banner .block .block-inner {
+    background: #ccc;
+    .block-icons {
+      text-align: center;
+      margin: 0 0 0.75em;
+      img {
+        max-width: 90%;
+        height: 50px;
+        margin: 0;
+        border: none;
+      }
+      img:first-child {
+        margin-top: 0.5em;
+        margin-right: 2.5em;
+      }
+    }
+    .block-title {
+        background: transparent;
+    }
+}
+
+#personal #main #main-inner #content #personal-awards .block .block-inner {
+    .block-image img {
+        width: 30%;
+    }
+}
+
+#personal #main #main-inner #content #personal-skills-core .block .block-inner, #main #main-inner #content #personal-skills-technical .block .block-inner {
+    .block-highlight {
+        font-weight: bold;
+    }
+}
+
+#personal #main #main-inner #content #personal-education .block .block-inner {
+    .block-image img {
+        width: 30%;
+        border-style: none;
+    }
+}

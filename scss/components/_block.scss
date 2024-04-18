@@ -1,0 +1,52 @@
+.block {
+  padding: 0;
+  .block-inner {
+    height: 100%;
+    border: none;
+    .block-title {
+      background: $color-background-block-title;
+      color: $color-block-title;
+      padding: 0.25em;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.25em;
+    }
+    .block-subtitle {
+      background: #ddd;
+      text-align: center;
+      vertical-align: middle;
+      min-height: 2.5em;
+      img {
+        height: 1.5em;
+        margin: 0.5em;
+      }
+    }
+    .block-body {
+      background: $color-background-block-text;
+      color: $color-block-text;
+      padding: 1em 1em 0.5em;
+      .block-body-list {
+        text-align: center;
+        ul {
+          margin: 1em auto;
+          display: inline-block;
+          text-align: left;
+          max-width: 1200px;
+        }
+      }
+      .block-body-button-more {
+        margin-top: 0.5em;
+        text-align: center;
+      }
+    }
+    .block-button {
+      text-align: center;
+      margin: 0.5em 0.25em 1em;
+      a {
+        display: inline-block;
+        margin: 0.25em;
+        min-width: 5em;
+      }
+    }
+  }
+}

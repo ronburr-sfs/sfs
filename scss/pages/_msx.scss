@@ -1,0 +1,152 @@
+.msx {
+  .block:not(.block-menu) {
+    .block-inner {
+      .block-title {
+      }
+      .block-image {
+        float: left;
+        margin: 2em 3em 2em 2em;
+        width: 250px;
+        img {
+          width: 250px;
+          height: auto;
+        }
+      }
+      .block-body {
+        padding: 2em;
+        margin-left: 300px;
+        ul {
+          margin-top: 1em;
+          li {
+            list-style: none;
+            margin-bottom: 0.15em;
+            margin-top: 0.15em;
+            &::before {
+              content: "\2022";
+              color: $color-secondary;
+              font-weight: bold;
+              display: inline-block;
+              width: 1em;
+              margin-left: -1em;
+            }
+            ul {
+              margin: 0.5em 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.msx-products-linear-motors {
+  .block-image {
+    img {
+      display: block;
+    }
+  }
+}
+
+.msx-services .msx .block:not(.block-menu) .block-inner {
+  .block-image {
+    float: none;
+    text-align: left;
+    display: block;
+    width: 100%;
+    margin: 2em;
+    img {
+      display: inline-block;
+      height: 220px;
+      width: auto;
+      &:nth-child(n+2) {
+        margin-top: 12px;
+      }
+    }
+  }
+  .block-body {
+    margin: 2em;
+    padding: 0;
+  }
+}
+
+.msx-sonic-mixers .msx .block:not(.block-menu) .block-inner {
+  .block-title a {
+    color: white;
+    padding: 0.15em 1em;
+    &:hover {
+      background: $color-secondary;
+      text-decoration: none;
+    }
+  }
+  .block-image {
+    float: none;
+    text-align: center;
+    display: block;
+    width: 100%;
+    margin: 2em 0;
+    img {
+      display: inline-block;
+      height: 220px;
+      width: auto;
+      margin: 1em;
+      &.msx-add-border {
+        border: 1px solid navy;
+      }
+    }
+  }
+  .block-body {
+    margin: 1em 1em 2em;
+    padding: 0;
+    text-align: center;
+  }
+}
+
+.msx-products .msx .block:not(.block-menu) .block-inner {
+  .block-title a {
+    color: white;
+    padding: 0.15em 1em;
+    &:hover {
+      background: $color-secondary;
+      text-decoration: none;
+    }
+  }
+  .block-image {
+    float: none;
+    text-align: center;
+    display: block;
+    width: 100%;
+    margin: 2em 0;
+    img {
+      display: inline-block;
+      height: 220px;
+      width: auto;
+      margin: 1em;
+      &.msx-add-border {
+        border: 1px solid navy;
+      }
+    }
+  }
+  .block-body {
+    margin: 1em 1em 2em;
+    padding: 0;
+    text-align: center;
+  }
+}
+
+.msx-video .block:not(.block-menu) .block-inner {
+  .block-image {
+    width: auto;
+    float: none;
+    text-align:center;
+    margin: 4em 2em 2em;
+  }
+  .block-body {
+    margin: 1em;
+    text-align: center;
+    ul {
+      display: inline-block;
+      margin: 0 auto;
+      text-align: left;
+    }
+  }
+}

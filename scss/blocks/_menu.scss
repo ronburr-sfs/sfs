@@ -1,0 +1,44 @@
+.block-menu {
+    .block-inner {
+      background: transparent;
+
+      .block-title {
+        display: none;
+      }
+      .block-body {
+        padding: 0 1em !important;
+        border-right-style: solid;
+        border-right-width: 1px;
+        background: transparent;
+        ul {
+          padding: 0.25em 0;
+          li {
+            list-style: none;
+            &:before {
+              content: none;
+            }
+            a {
+              color: black;
+              display: block;
+              padding: 0.15em 0.25em 0.15em 0.5em;
+              font-size: 1.05em;
+              font-weight: 500;
+              border-bottom: 1px solid transparent;
+              &:hover {
+                text-decoration: none;
+                background: $colorBlueVeryLight;
+              }
+              &.active {
+                text-decoration: none;
+                color: $colorBlue;
+              }
+            }
+          }
+          ul {
+            margin-left: 0.5em;
+          }
+        }
+      }
+    }
+  }
+  

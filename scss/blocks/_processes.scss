@@ -1,0 +1,21 @@
+#processes #main {
+    #content #process-steps {
+        background: $colorBlueVeryLight;
+        padding: 1em 2em;
+        .block {
+            padding: 1em;
+            .block-inner {
+                border: black 1px solid;
+                border-radius: 1em;
+                background: white;
+                .block-title {
+                    background: transparent;
+                }
+                .block-body {
+                    background: transparent;
+                    padding-top: 0.5em;
+                }
+            }
+        }
+    }
+}

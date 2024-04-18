@@ -1,0 +1,26 @@
+#main #content #products-banner {
+  padding: 0.5em;
+  .block {
+    .block-inner {
+      .block-image {
+        text-align: center;
+        margin: 1em 0 1em;
+        img {
+          height: 8em;
+          margin: 0 3em;
+        }
+      }
+      .block-body {
+        text-align: center;
+        padding-left: 1em;
+        padding-right: 1em;
+        ul {
+          display: inline-block;
+          text-align: left;
+          padding: 0;
+        }
+      }
+    }
+  }
+}
+  

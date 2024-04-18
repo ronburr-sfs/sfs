@@ -1,0 +1,14 @@
+#main #content #purpose {
+    padding: 1em 2em 2em;
+    .block-image {
+        margin-top: 1em;
+        text-align: center;
+        img {
+            width: 80%;
+            border-style: double;
+        }
+    }
+    .block-body-list {
+        text-align: left;
+    }
+}

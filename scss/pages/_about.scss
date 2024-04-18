@@ -1,0 +1,73 @@
+body.about .blocks .block .block-inner {
+  .block-body {
+    .block-body-list {
+      text-align: center;
+      ul {
+        margin: 1em auto;
+        display: inline-block;
+        text-align: left;
+        max-width: 1200px;
+      }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    .block-body-button-more {
+      a {
+        margin: 0.5em auto;
+        min-width: 6em;
+        display: inline-block;
+        padding-left: 1em;
+        padding-right: 1em;
+        @media screen and ( min-width: 1000px ) {
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
+
+body.about .blocks.principals .block .block-inner .block-body .block-body-button-more {
+  a {
+    display: inline-block;
+    width: 8em;
+  }
+}

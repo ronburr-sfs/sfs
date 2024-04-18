@@ -1,0 +1,61 @@
+#home {
+  #main {
+    #main-banner {
+      position: relative;
+      img {
+        margin-top: 0;
+        &.img-main-banner-overlay {
+          position: absolute;
+          top: 10%;
+          right: 10%;
+          height: 80%;
+          width: auto;
+          border-radius: 10px;
+          box-shadow: 4px 4px #ccc;
+        }
+      }
+      #home-banner-overlay {
+        position: absolute;
+        top: 3em;
+        right: 2em;
+        background: #666;
+        opacity: 0.7;
+        border-radius: 1em;
+        padding: 0.5em 1em 1em 2em;
+        #home-banner-title {
+          font-size: 1.5em;
+          font-weight: bold;
+          color: $colorGreen;
+          #home-banner-title-left {
+            color: $colorGreen;
+          }
+          #home-banner-title-right {
+            color: $colorBlue;
+          }
+        }
+        #home-banner-tagline {
+          width: 20em;
+          font-size: 1.25em;
+          color: white;
+        }
+      }
+    }
+    #main-header {
+      display: none;
+    }
+    #content {
+      #awards {
+        background: $colorBlueVeryLight;
+        .block-title, .block-body {
+          background: transparent;
+        }
+      }
+      #contact {
+        background: $colorBlueVeryLight;
+        .block-title, .block-body {
+          background: transparent;
+        }
+      }
+    }
+  }
+}

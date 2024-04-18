@@ -1,0 +1,16 @@
+ul {
+  padding-left: 1em;
+  li {
+    list-style: none;
+    margin-bottom: 0.15em;
+    margin-top: 0.15em;
+    &::before {
+      content: "\2022";
+      color: $color-secondary;
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+    }
+  }
+}

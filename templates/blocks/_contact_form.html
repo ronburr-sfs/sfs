@@ -1,0 +1,35 @@
+<div class='block col-12'>
+  <div class='block-inner'>
+    <div class="block-title">Get In Touch</div>
+    <div class='block-body'>
+      <a title="Email Stonefly" href="mailto:info@stoneflysystems.com">info@stoneflysystems.com</a> |
+      <a title="Email Ron" href="mailto:ronburr@stoneflysystems.com">ronburr@stoneflysystems.com</a>
+    </div>
+  </div>
+</div>
+  
+<div class='block col-12 col-lg-6'>
+  <div class='block-inner'>
+    <div class='block-image'>
+      <img src="{{ url_for('static', filename='img/home-1.jpg') }}">
+    </div>
+  </div>
+</div>
+
+<div class='block col col-12 col-lg-6'>
+  <div class='block-inner'>
+    <div class='block-form'>
+      <form action="mailto:info@stoneflysystems.com" method="post">
+        <div class='block-body-form-label'>Name (required)</div>
+        <div class='block-body-form-input'><input type="text" name="your-name" value="" /></div>
+        <div class='block-body-form-label'>Email (required)</div>
+        <div class='block-body-form-input'><input type="text" name="your-email" value="" /></div>
+        <div class='block-body-form-label'>Subject</div>
+        <div class='block-body-form-input'><input type="text" name="your-subject" value="" /></div>
+        <div class='block-body-form-label'>Message</div>
+        <div class='block-body-form-input'><textarea name="your-message"></textarea></div>
+        <div class='block-body-form-button'><input class='btn btn-primary' type="submit" value="Send" /></div>
+      </form>
+    </div>
+  </div>
+</div>

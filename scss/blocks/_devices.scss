@@ -1,0 +1,31 @@
+#products #main #content #devices {
+    background: $colorBlueVeryLight;
+    padding: 1em 2em;
+    .block {
+        padding: 1em;
+        .block-inner {
+            min-height: 200px;
+            background: white;
+            border-style: solid;
+            border-width: thin;
+            border-color: black;
+            border-radius: 1em;
+            .block-title {
+                background: transparent;
+            }
+            .block-subtitle {
+                background: lightgrey;
+            }
+            .block-image {
+                float: right;
+                margin: 1em;
+                img {
+                height: 100px;
+                }
+            }
+            .block-button {
+                background: transparent;
+            }
+        }
+    }
+}

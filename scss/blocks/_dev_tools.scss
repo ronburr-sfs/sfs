@@ -1,0 +1,20 @@
+#applications #main #content #dev-tools {
+    padding: 1em;
+    background: $colorBlueVeryLight;
+    .block {
+        padding: 1em;
+        .block-inner {
+            border-style: solid;
+            border-width: thin;
+            border-color: black;
+            border-radius: 1em;
+            background: white;
+            .block-title {
+                background: transparent;
+            }
+            .block-body {
+                background: transparent;
+            }
+        }
+    }
+}

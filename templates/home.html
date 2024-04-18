@@ -1,0 +1,51 @@
+{% extends "./layout/default.html" %}
+{% set page='home' %}
+{% set css='home' %}
+{% set menu = 'home' %}
+
+{% block main_banner %}
+  <div id='home-banner-overlay'>
+    <div id="home-banner-title">
+      <span id="home-banner-title-left">Stonefly</span>
+      <span id="home-banner-title-right">Systems</span>
+    </div>
+    <div id="home-banner-tagline">Blending people, data, technology, process, and innovation.</div>
+  </div>
+  <img src="{{ url_for('static', filename='img/home-drop-with-overlay.jpg') }}">
+{% endblock %}
+
+{% block main_title %}
+  <h1>Home</h1>
+{% endblock %}
+
+{% block content %}
+
+<div id='awards' class='blocks row'>
+  {% include "./blocks/_awards_banner.html" %}
+</div>
+
+<div id='mission' class='blocks row'>
+  {% include "./blocks/_mission.html" %}
+</div>
+
+<div id='capabilities' class='blocks row'>
+  {% include './blocks/_capabilities.html' %}
+</div>
+
+<div id='apps-banner' class='blocks row'>
+  {% include "./blocks/_apps_banner.html" %}
+</div>
+
+<div id='products-banner' class='blocks row'>
+  {% include "./blocks/_products_banner.html" %}
+</div>
+
+<div id='principals' class='blocks row'>
+  {% include './blocks/_principals.html' %}
+</div>
+
+<div id='contact-form' class='blocks row'>
+  {% include "./blocks/_contact_form.html" %}
+</div>
+
+{% endblock %}
