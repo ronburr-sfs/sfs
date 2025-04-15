@@ -5,11 +5,8 @@
 
 {% block main_banner %}
   <div id='home-banner-overlay'>
-    <div id="home-banner-title">
-      <span id="home-banner-title-left">Stonefly</span>
-      <span id="home-banner-title-right">Systems</span>
-    </div>
-    <div id="home-banner-tagline">Blending people, data, technology, process, and innovation.</div>
+    <div id="home-banner-title">Burr Family Runion</div>
+    <div id="home-banner-tagline">June 9-16, 2025</div>
   </div>
   <img src="{{ url_for('static', filename='img/home-drop-with-overlay.jpg') }}">
 {% endblock %}
@@ -20,32 +17,85 @@
 
 {% block content %}
 
-<div id='awards' class='blocks row'>
-  {% include "./blocks/_awards_banner.html" %}
+<div id='team' class='blocks row'>
+  <div class="section-title col-12">Attendees</div>
+  <div class="section-body col-12">
+    <table>
+      <tr>
+        <th>Group</th>
+        <th>Schedule</th>
+      </tr>
+      <tr>
+        <td>Ron & Teri</td>
+        <td>June 9-16</td>
+      </tr>
+      <tr>
+        <td>Test</td>
+      </tr>
+    </table>
+  </div>
 </div>
 
-<div id='mission' class='blocks row'>
-  {% include "./blocks/_mission.html" %}
+<div id='agenda' class='blocks row'>
+  <div class="section-title col-12">Agenda</div>
+  <div class="section-body col-12">
+    <table>
+      <tr>
+        <th>Group</th>
+        <th>Schedule</th>
+      </tr>
+      <tr>
+        <td>Ron & Teri</td>
+        <td>June 9-16</td>
+      </tr>
+      <tr>
+        <td>Test</td>
+      </tr>
+    </table>
+  </div>
 </div>
 
-<div id='capabilities' class='blocks row'>
-  {% include './blocks/_capabilities.html' %}
-</div>
-
-<div id='apps-banner' class='blocks row'>
-  {% include "./blocks/_apps_banner.html" %}
-</div>
-
-<div id='products-banner' class='blocks row'>
-  {% include "./blocks/_products_banner.html" %}
-</div>
-
-<div id='principals' class='blocks row'>
-  {% include './blocks/_principals.html' %}
-</div>
-
-<div id='contact-form' class='blocks row'>
-  {% include "./blocks/_contact_form.html" %}
-</div>
+<style>
+  #main #main-banner {
+    max-height: 200px;
+    #home-banner-title, #home-banner-tagline {
+      text-align: center;
+    }
+  }
+  .section-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 0.5em;
+  }
+  .section-body {
+    text-align: center;
+    margin: 0.5em auto;
+    #team, #agenda {
+      text-align: center;
+      .section-title {
+        margin: 0.5em auto;
+        text-align: center;
+      }
+    }
+    table {
+      border-color: black;
+      margin: 1em auto;
+      th, td {
+        border-style: solid;
+        border-width: 2px;
+        border-color: #999;
+        padding: 0.25em 2em;
+        background-color: white;
+      }
+    }
+    th {
+      background-color: #ccc;
+    }
+  }
+  #agenda, #team {
+    background: #ddd;
+  }
+</style>
 
 {% endblock %}
