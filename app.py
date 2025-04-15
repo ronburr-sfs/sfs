@@ -97,3 +97,7 @@ def msx_sonic_mixers_video():
 @app.route('/msx-sonic-mixers')
 def msx_sonic_mixers():
     return render_template('msx_sonic_mixers.html')
+
+@app.route('/burrs')
+def burrs():
+    return render_template('burrs.html')
