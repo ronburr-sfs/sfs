@@ -7,6 +7,10 @@
   <div id='home-banner-overlay'>
     <div id="home-banner-title">Burr Family Reunion</div>
     <div id="home-banner-tagline">June 9-16, 2025</div>
+    <div id="home-banner-password">
+      Password:
+      <input id="home-banner-input"/>
+    </div>
   </div>
   <img src="{{ url_for('static', filename='img/home-drop-with-overlay.jpg') }}">
 {% endblock %}
@@ -24,7 +28,10 @@
       <tr><th>Group</th><th>Schedule</th></tr>
       <tr><td>Ron & Teri</td><td>June 9-16 (Mon-Mon)</td></tr>
       <tr><td>Eva & Elise</td><td>June 11-15 (Wed-Sun)</td></tr>
-      <tr><td>Barb & Wayne</td><td>June 8-15 (Sun-Sun)</td></tr>
+      <tr><td>Shawna & Bruce</td><td>???</td></tr>
+      <tr><td>Todd, Jane & Company</td><td>???</td></tr>
+      <tr><td>Joan</td><td>???</td></tr>
+      <tr><td>Nikki, Chuck & Cora</td><td>???</td></tr>
     </table>
   </div>
 </div>
@@ -36,10 +43,47 @@
       <tr>
         <th>Event</th>
         <th>Schedule</th>
+        <th>Notes</th>
       </tr>
       <tr>
         <td>Fishing</td>
         <td>June 12 (Thu) - Afternoon</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>West Seattle/Alki</td>
+        <td>???</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Seattle - Downtown</td>
+        <td>???</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Seattle - Aquarium & Space Needle</td>
+        <td>???</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Lake Potluck</td>
+        <td>???</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Renton Top Golf</td>
+        <td>???</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Winlock &/or Riverview (Mt Raineer)</td>
+        <td>???</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Seattle - Bell Harbor</td>
+        <td>???</td>
+        <td></td>
       </tr>
     </table>
   </div>
@@ -78,14 +122,37 @@
       padding: 0.25em 2em;
       background-color: white;
     }
+    td {
+      text-align: left;
+    }
     th {
       background-color: #bbb;
     }
   }
 }
+#home-banner-password {
+  text-align: center;
+  margin-top: 0.25em;
+  font-weight: bold;
+}
 #agenda, #team {
   background: #ddd;
 }
 </style>
-
+<script>
+  $(document).ready(function() {
+    $('#team').hide();
+    $('#agenda').hide();
+    $('#home-banner-input').on('input', function() {
+      const password = $(this).val();
+      if (password == 'salmon') {
+        $('#team').show();
+        $('#agenda').show();
+      } else {
+        $('#team').hide();
+        $('#agenda').hide();
+      }
+    });
+  });
+</script>
 {% endblock %}
