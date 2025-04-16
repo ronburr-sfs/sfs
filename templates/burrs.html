@@ -172,14 +172,17 @@
   $(document).ready(function() {
     $('#team').hide();
     $('#agenda').hide();
+    $('#resources').hide();
     $('#home-banner-input').on('input', function() {
       const password = $(this).val();
       if (password == 'salmon') {
         $('#team').show();
         $('#agenda').show();
+        $('#resources').show();
       } else {
         $('#team').hide();
         $('#agenda').hide();
+        $('#resources').hide();
       }
     });
   });
